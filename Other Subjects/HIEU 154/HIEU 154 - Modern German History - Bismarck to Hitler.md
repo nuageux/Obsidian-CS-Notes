@@ -6,6 +6,8 @@ Instructor: Prof. Frank Beiss
 Course Description:
 "An analysis of the volatile course of German history from unification to the collapse of the Nazi dictatorship. Focus is on domestic developments inside Germany as well as on their impact on European and global politics in the twentieth century."
 
+
+
 ## Course Content
 <!-- Week 1 -->
 #### German Unification
@@ -13,15 +15,15 @@ Course Description:
 - [[Industrialization and Political Mobilization]]
 <!-- Week 2 -->
 #### The German Empire
-- [[Society and Culture]]
 - [[German Colonialism and Genocide]]
+- [[Society and Culture]]
 <!-- Week 3 -->
 #### The First World War
 - [[The Origins of the First World War]]
 - [[Total War]]
 <!-- Week 4 -->
 #### From Monarchy to Republic
-- [[A German Revolution?]]
+- [[A German Revolution]]
 - [[Postwar: Crisis and Stabilization]]
 <!-- Week 5 -->
 #### Modernity and its Discontents: Weimar in the 1920's
