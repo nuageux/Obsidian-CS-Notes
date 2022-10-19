@@ -1,0 +1,13 @@
+- power wall in 2005, too much power in one chip just melts the thing
+- ilp and memory wall as well 
+- Thread throughput has been improved over the years with Simultaneous Multi-Threading (SMT) and Single Chip Multi-Processors (CMP)
+	- We haven't just infinitely added cores because getting performance out of a multiprocessor with code parallelizing is difficult.
+- clock speed is the biggest contributor to power
+	- doubling clock speed increases power by 8x, so we cant do that anymore
+- specialization happens bc multicore is difficult/
+	- graphics, ai, video processing, super computing.
+	- "heterogeneous multicores" implemented on apple m1 chip and ps3.
+
+- performance is intricately related to energy efficiency.
+- **MIPS (million instructions per second) is represented as Instrcution count / ( Executiontime * 10^6 )**
+	- It's intuitive, but MIPS doesn't consider the amount of work a given instruction does, so it may be misleading.

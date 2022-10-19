@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "55883a473a00078f",
+    "type": "split",
+    "children": [
+      {
+        "id": "67b5589fdb7c1c95",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "55eebef6304931dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "51f273f3eebe7464",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99f568147d886058",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5f68e90f64ca1e7e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c68acaee281f9b8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c584422bd6711d59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d842abd4f7e9ee45",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "67b5589fdb7c1c95",
+  "lastOpenFiles": []
+}

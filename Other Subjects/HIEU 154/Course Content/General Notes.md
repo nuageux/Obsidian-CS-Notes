@@ -1,0 +1,21 @@
+- Unification of nation state to collapse and disappearance
+- Song of the Germans
+	- fatherland
+	- uniuty is a big theme
+	- inwards vs outwards stanzas
+	- germany was a bunch of separate states
+	- but later "over all" referred to germany's superiority over other nations
+		- so now third verse only sees main use while 1st is frowned upon
+	- unity, justice, freedom
+		- order of this statement matters?
+	- meanings change over time, values exchange
+- jewish population before holocaust in germany was only 1%, most jewish were killed in poland
+- socialist majority in germany before nazi rise...
+- huge jump in vote share for nazi party, from 2% to 37%
+
+office hours questions
+- im not interested in germany because it feels too mainstream like the holocaust in terms of history education
+- i prefer a hybrid because it means that less people attend class, i like the extra space and i can take more of the professors attention
+- i feel uncomfortable about diary entry assignments because it feels presumptuous to even imagine that i had gone through the same pains these people have. 
+- people give up freedom because being free isn't all that great when the system is stacked against you.
+- peaky blinders line... "i learned that if politics is a circle. if you go left enough and right enough... socialism and fascism meet here."

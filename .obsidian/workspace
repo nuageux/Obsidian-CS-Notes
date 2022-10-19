@@ -1,0 +1,125 @@
+{
+  "main": {
+    "id": "c085ac5e211b4f2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6efd4c46aef87a69",
+        "type": "leaf",
+        "dimension": 78.26086956521739,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Affine Geometry.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "749c790666ea104d",
+        "type": "leaf",
+        "dimension": 21.73913043478261,
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2af9d0b8db9be776",
+    "type": "split",
+    "children": [
+      {
+        "id": "04b14d1ff6637ae7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd34b30fb3f882aa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5cc29534d5c80d19",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#German",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 224.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "b1275e1774d75270",
+    "type": "split",
+    "children": [
+      {
+        "id": "e04352194de2ceae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3d5ac799eeee7a0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Affine Geometry.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "59b8ba6183684306",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6efd4c46aef87a69",
+  "lastOpenFiles": [
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
+    "Geometric Algebra.md",
+    "Euler Angles.md",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Linear Algebra.md",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/3D Rotations.md",
+    "Computer Science/Upper Division/CSE 132A - Database System Principles/Course Content/SQL.md",
+    "Computer Science/Upper Division/CSE 132A - Database System Principles/CSE 132A - Database System Principles.md",
+    "Other Subjects/HIEU 154/HIEU 154 - Modern German History - Bismarck to Hitler.md",
+    "Computer Science/Upper Division/CSE 142 - Introduction to Computer Architecture/Course Content/Measuring Performance.md",
+    "Computer Science/Upper Division/CSE 142 - Introduction to Computer Architecture/CSE 142 - Introduction to Computer Architecture - A Software Perspective.md"
+  ]
+}
