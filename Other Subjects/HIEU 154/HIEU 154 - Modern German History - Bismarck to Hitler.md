@@ -24,7 +24,7 @@ Course Description:
 <!-- Week 4 -->
 #### From Monarchy to Republic
 - [[A German Revolution]]
-- [[Postwar: Crisis and Stabilization]]
+- [[Crisis and Stabilization]]
 <!-- Week 5 -->
 #### Modernity and its Discontents: Weimar in the 1920's
 - [[Weimar Culture]]
