@@ -15,4 +15,9 @@
 ## Homosexual Emancipation
 - Magnus Hirschfeld and his idea of the "third sex"
 	- Argued that homosexuality was an inborn disposition, so the criminalization of homosexuality doesn't make sense, because you don't have a choice!
-	- 
+	- "Lavender Song"
+	- There was tolerance with restraints
+
+political failure vs cultural vibrance
+- think about culture wars in our current society
+- 

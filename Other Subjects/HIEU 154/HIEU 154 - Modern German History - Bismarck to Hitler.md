@@ -31,7 +31,7 @@ Course Description:
 - [[Gender and Sexuality]]
 <!-- Week 6 -->
 #### From Democracy to Dictatorship
-- [[The Great Depression and the Collapse of Democracy]]
+- [[The Crisis of the Weimar Republic]]
 - [[The Rise of National Socialism]]
 #### The Third Reich	
 - ##### Politics and Culture    <!-- Week 7 -->
