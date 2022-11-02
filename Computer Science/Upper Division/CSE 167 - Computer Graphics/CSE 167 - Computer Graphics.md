@@ -19,3 +19,9 @@ Course Description:
 <!-- Wk 3 -->
 - [[Affine Geometry]]
 - [[Projective Geometry]]
+- [[Hierarchical Modeling]]
+- [[Lighting]]
+- [[Interpolation]]
+- [[Texture]]
+- [[Shadows]]
+- [[Curves]]

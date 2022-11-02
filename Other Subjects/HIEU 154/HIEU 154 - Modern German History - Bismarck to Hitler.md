@@ -20,11 +20,11 @@ Course Description:
 <!-- Week 3 -->
 #### The First World War
 - [[The Origins of the First World War]]
-- [[Total War]]
+- [[Total War 1]]
 <!-- Week 4 -->
 #### From Monarchy to Republic
 - [[A German Revolution]]
-- [[Crisis and Stabilization]]
+- [[Crisis and Stabilization 1]]
 <!-- Week 5 -->
 #### Modernity and its Discontents: Weimar in the 1920's
 - [[Weimar Culture]]
