@@ -6,7 +6,6 @@
       {
         "id": "e09aadcd3b6dfeb0",
         "type": "tabs",
-        "dimension": 78.26086956521739,
         "children": [
           {
             "id": "6efd4c46aef87a69",
@@ -14,25 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Database Connectivity.md",
+                "file": "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "053cd344189f72a6",
-        "type": "tabs",
-        "dimension": 21.73913043478261,
-        "children": [
-          {
-            "id": "749c790666ea104d",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -77,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5,
-    "collapsed": true
+    "width": 224.5
   },
   "right": {
     "id": "b1275e1774d75270",
@@ -94,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java Database Connectivity.md",
+                "file": "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,15 +108,15 @@
   },
   "active": "6efd4c46aef87a69",
   "lastOpenFiles": [
-    "Computer Science/Upper Division/CSE 132A - Database System Principles/CSE 132A - Database System Principles.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Graphics Pipeline.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
-    "Other Subjects/HIEU 154/Course Content/Crisis and Stabilization 1.md",
-    "Other Subjects/HIEU 154/Course Content/Total War 1.md",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/image - continuity counterexample.png",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/image - rethinking light.png",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/image - shadows create depth.png",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/More Realism.md",
     "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Shadows.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Interpolation.md",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Texture.md",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
     "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Curves.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Lighting.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Texture.md"
+    "Other Subjects/HIEU 154/Course Content/Total War 1.md",
+    "Other Subjects/HIEU 154/Course Content/Total War.md"
   ]
 }
