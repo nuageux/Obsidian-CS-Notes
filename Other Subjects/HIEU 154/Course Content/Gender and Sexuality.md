@@ -1,3 +1,4 @@
+#German #History
 ## The "Old" and the "New" Woman
 - Gender is a "constitute element of social relationships based on preceived differences between the sexes" AND "gender is a primary way of signifying relationships of power"
 - Oriented towards the present

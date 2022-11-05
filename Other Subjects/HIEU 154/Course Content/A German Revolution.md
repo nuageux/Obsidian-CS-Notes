@@ -1,5 +1,5 @@
-# The German Revolution of 1918 and 1919
-## The Revolution from Above (and Below)
+#German #History
+## The Revolution from Above (and Below) of 1918-19
 - The October-reforms and the appointment of Prince Max von Baden as Kaiser
 - Became a parliamentary monarchy; the government is now responsible to the parliament (Reichstag) not the Kaiser
 - Was felt that this was too little, too late

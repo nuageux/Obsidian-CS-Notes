@@ -1,3 +1,4 @@
+#German #History
 ## The Great Depression
 - Most serious crisis of capitalism, ever (until maybe 2008)
 - Domestic

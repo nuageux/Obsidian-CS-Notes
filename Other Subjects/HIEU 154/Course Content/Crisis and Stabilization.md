@@ -1,3 +1,4 @@
+#German #History
 ## Political Challenges from Left and Right
 - Kapp Putsch in 1920, the attempted Right coup
 	- Defeated by general strike

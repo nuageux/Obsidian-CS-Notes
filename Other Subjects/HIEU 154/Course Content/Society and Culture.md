@@ -1,5 +1,4 @@
 #German #History
-# Society and Culture
 ## Prologue: The Modernity of Imperial Germany
 - In the monotony of industrial life, modern Germans looked for expressions of individualism, such as nudism or vegetarianism.
 #### Art

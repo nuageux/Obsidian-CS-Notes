@@ -20,6 +20,34 @@
 - To ensure the smoothness of a curve, we require that $f'(t) \neq 0$, and a curve with a non-vanishing first derivative is called a *regular curve*, and uses $G$ instead of $C$.
 ## Spline Curves
 - We now introduce "control points", which are the parameters for curve generation. The resulting curves are known as **splines**.
-## Bezier Curve
+	- The word comes from a flexible piece of wood sailors used to draw smooth shapes.
+- In computations, the spline curves are almost always parameterized by *polynomials*.
+	- Linear: $f(t) = p_0 + td$
+	- Quadratic: $f(t) = at^2 + bt + c$
+		- We can use 3x1 matrices to represent homogeneous coordinates for the coefficiencts of quadratic polynomial curves.
+	- Cubic: $f(t) = at^3 + bt^2 + ct + d$
+		- An approximate solutions to elastic curves.
+- With higher degree polynomials, we have more variety of curves, but the behavior of higher degree polynomials are hard to control.
+	- Therefore for spline interpolation, we use **piecewise** lower order polynomials.
+- There are two techniques...
+	- The Bézier curve, which passes through a subset of control points at the junctions.
+	- The Basis spline (B-spline), where the curve does not pass through the control points and the transition between polynomial curves is smoother.
+## Bézier Curve
+- Bézier was the one who popularized de Casteljau's technique when he applied it to the bodywork of Renault cars.
+- Provides intuitive control where the endpoints are passed through while the intermediate points are approximated.
+- We commonly use a cubic Bézier curve with 4 control points.
+![[image - spline concept.png]]
+### de Casteljau's Algorithm
+- Essentially, it is recursive linear interpolation.
+	- We will refer to linear interpolation between to points by the **lerp** function (refered to as `mix` in OpenGL.
+```c++
+point lerp(point p, point q, float t) {
+	return (1-t)p + tq;
+}
+```
+- Going over an example, we are given 4 points, $p_0$ to $p_3$ and a value $t$ between 0 and 1.
+	- Get 3 points with lerp: $q_0(t) = lerp(p_0, p_1, t)$, ... , $q_2(t) = lerp(p_2, p_3, t)$
+	- Then 2 points with the $q$ values from the previous step.
+	- Finally, we get our interpolated point by lerping the 2 points from the last step.
 ## B-Spline
 ## Subdivision

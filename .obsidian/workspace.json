@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
+                "file": "Other Subjects/HIEU 154/Course Content/A German Revolution.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 224.5,
+    "collapsed": true
   },
   "right": {
     "id": "b1275e1774d75270",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
+                "file": "Other Subjects/HIEU 154/Course Content/A German Revolution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,15 +109,15 @@
   },
   "active": "6efd4c46aef87a69",
   "lastOpenFiles": [
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/image - continuity counterexample.png",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/image - rethinking light.png",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/image - shadows create depth.png",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/More Realism.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Shadows.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Texture.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Curves.md",
-    "Other Subjects/HIEU 154/Course Content/Total War 1.md",
-    "Other Subjects/HIEU 154/Course Content/Total War.md"
+    "Other Subjects/HIEU 154/HIEU 154 - Modern German History - Bismarck to Hitler.md",
+    "Other Subjects/HIEU 154/Course Content/Total War.md",
+    "Other Subjects/HIEU 154/Course Content/The Origins of the First World War.md",
+    "Other Subjects/HIEU 154/Course Content/Society and Culture.md",
+    "Computer Science/Upper Division/CSE 110 - Software Engineering/CSE 110 - Software Engineering.md",
+    "Computer Science/Upper Division/CSE 110 - Software Engineering/Course Content/Lab Techniques - Android Studio.md",
+    "Computer Science/Upper Division/CSE 110 - Software Engineering/Course Content/Testing.md",
+    "Computer Science/Upper Division/CSE 110 - Software Engineering/Course Content/Planning.md",
+    "Computer Science/Upper Division/CSE 110 - Software Engineering/Course Content/The Customer.md",
+    "Computer Science/Upper Division/CSE 110 - Software Engineering/Course Content/Requirements.md"
   ]
 }

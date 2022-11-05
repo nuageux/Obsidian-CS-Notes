@@ -1,3 +1,4 @@
+#German #History
 Vibrancy of Weimar Cultural Life
 From Elite to Mass Culture
 Increase of Leisure Time, Concept of the 'Weekend'

@@ -1,5 +1,4 @@
 #History #German
-# Industrialization and Political Mobilization
 ## Industrialization and Urbanization
 - The growth of cities was unprecedentedly rapid.
 
@@ -17,24 +16,24 @@
 - Socialism was mainly defined as the abolition of private property (and arguably holds the same definition today).
 - Working class life in Germany was miserable.
 #### Marxism
-- The SPD's political ideology
+- The SPD's political ideology.
 	- History portrayed as a history of class struggle.
 		- The initial triumph of the bourgeoisie...
 			- ...leading to its inevitable decline.
 		- The immiseration of the proletariat...
 			- ...leading to the Socialist revolution.
 - Had an almost religious appeal to the working class of Germany.
-- The psychological effects were myriad
+- The psychological effects were myriad:
 	- The image of liberating the worker from his chains was common.
 	- So was the idea of a literal "march" to Socialism.
 	- The 8-hour day was an issue won that motivated German workers.
-- There were challenges to the SPD's orthodoxy, of course
+- There were challenges to the SPD's orthodoxy, of course:
 	- Kautsky said that "the SPD is a revolutionary but not a revolution-making party".
 - Compare the revisionist Bernstein's analysis compared to the revolutionary Luxemburg's response.
 - Workers' Associations for activities such as singing, hiking, gymnastics, and more arose.
 
 ## Mobilization on the Right: Nationalist Associations
-- Not in classical parties, but in informal club-like "parties"
+- Not in classical parties, but in informal club-like "parties".
 	- Some say they were used as tools by nationalist parties.
 	- Others say they were not just controlled by elites, claiming that the parties were autonomous and radical.
 		- They were indeed problems for conservatives at times.
