@@ -11,3 +11,5 @@ Course Description:
 - [[Database Management Systems]]
 - [[The Relational Data Model]]
 - [[SQL]]
+- [[Java Database Connectivity]]
+- [[Relational Calculus and Algebra]]

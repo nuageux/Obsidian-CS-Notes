@@ -14,8 +14,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Graphics Pipeline.md",
-                "mode": "preview",
+                "file": "Java Database Connectivity.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.5
+    "width": 224.5,
+    "collapsed": true
   },
   "right": {
     "id": "b1275e1774d75270",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Graphics Pipeline.md",
+                "file": "Java Database Connectivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,6 +125,8 @@
   },
   "active": "6efd4c46aef87a69",
   "lastOpenFiles": [
+    "Computer Science/Upper Division/CSE 132A - Database System Principles/CSE 132A - Database System Principles.md",
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Graphics Pipeline.md",
     "Computer Science/Upper Division/CSE 167 - Computer Graphics/CSE 167 - Computer Graphics.md",
     "Other Subjects/HIEU 154/Course Content/Crisis and Stabilization 1.md",
     "Other Subjects/HIEU 154/Course Content/Total War 1.md",
@@ -131,8 +134,6 @@
     "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Interpolation.md",
     "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Curves.md",
     "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Lighting.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Texture.md",
-    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Hierarchical Modeling.md",
-    "README.md"
+    "Computer Science/Upper Division/CSE 167 - Computer Graphics/Course Content/Texture.md"
   ]
 }
