@@ -49,5 +49,24 @@ point lerp(point p, point q, float t) {
 	- Get 3 points with lerp: $q_0(t) = lerp(p_0, p_1, t)$, ... , $q_2(t) = lerp(p_2, p_3, t)$
 	- Then 2 points with the $q$ values from the previous step.
 	- Finally, we get our interpolated point by lerping the 2 points from the last step.
+#### In Code
+- We simply use a copy of the array input to save memory.
+
+### Bernstein Polynomials
+- It's essentially the explicit form of the lerping.
+	- Long story short, with 4 points and $s = 1-t$ and $t$, the equation is $s^3p_0 + 3s^2tp_1 + 3st^2p_2+t^3p_3$.
+	- Notice something? Its format is the same as binomials.
+		- $(1-t)^kt^{n-k}p_k$ times $n$ choose $k$, sum from $k=0$ to $n$ = number of points - 1.
+- Notice futher that the equation is a linear combination of $t^3, t^2, t, 1$, so we can use matrix notation.
+	- We can apply this Bernstein basis on a set of points.
+
+### Cubic Blossom
+- To "blossom" means to reverse-engineer a polynomial curve back to its control points.
+- We want a cubic blossom, a function of 3 variables, with the following properties:
+	- Symmetric
+	- Tri-Affine
+	- Diagonal Consistency
+- In general... $$ F(t_1, t_2, t_3) = at_1t_2t_3 + b *(t_1t_1+t_2t_3 + t_1t_3)/3 + c*(t_1 + t_2 + t_3) /3 + d$$
 ## B-Spline
+- 
 ## Subdivision
