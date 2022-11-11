@@ -1,3 +1,4 @@
+#Java #SQL #Database 
 ## JDBC
 - Has a three-tier architecture.
 	- Web-browser, which sends HTTP requests to the App Server

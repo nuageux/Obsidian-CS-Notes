@@ -1,3 +1,4 @@
+#Database #Data-Structure 
 # Relational Model
  - Consists of a collection of tables, each assigned a unique name.
 	- Tables are called **relations**. ^40a3c5

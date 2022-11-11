@@ -10,6 +10,7 @@ Course Description:
 #### Course Content
 - [[Database Management Systems]]
 - [[The Relational Data Model]]
-- [[SQL]]
+- [[SQL]] <!-- incomplete -->
 - [[Java Database Connectivity]]
 - [[Relational Calculus and Algebra]]
+- [[Query Processing]]

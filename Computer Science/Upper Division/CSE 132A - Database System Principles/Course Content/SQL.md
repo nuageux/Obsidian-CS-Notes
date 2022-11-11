@@ -1,3 +1,4 @@
+#SQL #Database 
 # SQL
 - Structured Query Language, pronounced "sequel".
 - Parts:

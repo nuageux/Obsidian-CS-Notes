@@ -15,6 +15,7 @@ Here are the tags currently being used:
 - Math
 
 - Data-Science
+- Database
 - Design
 - Game-Theory
 - Machine-Learning
