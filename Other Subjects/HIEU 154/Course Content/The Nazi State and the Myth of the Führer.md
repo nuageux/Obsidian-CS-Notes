@@ -2,8 +2,10 @@
 ## The Establishment of the Nazi Dictatorship
 - Recall the situation on January 30th, 1933: Hitler is now Chancellor, but is "framed" by conservatives.
 	- Hitler's question is how to overcome his dependency on Hindenburg.
+	- His answer is (ironically) through Parliamentary government, getting a majority: they immediately called for reelections!
 - The burning of the Reichstag and the "Law for the Protection of the People and the State" in 1933
-	- Responsibility? van der Lubbe recounts the traditional view while Hett recounts the revisionist view.
+	- Responsibility? Originally, a "Belgian Communist spy" van der Lubbe was blamed.
+	- Now, Hett recounts the revisionist view, claiming that the Nazis themselves set the fire.
 - The "Day of Potsdam", a ceremony for the re-opening of the Reichstag.
 - The Law to Remove the Distress of the People and the State (**The Enabling Act**) allowed Hitler to override the Reichstag whenever he pleased.
 	- Otto Wels's speech against the Enabling Act. Took guts.
@@ -12,6 +14,8 @@
 
 ## Terror
 - Early concentration camps such as Columbia Haus Berlin.
+	- Was portrayed as a place to "reeducate" political opponents.
+- Nazis were known to be able to use violence with impunity.
 - A campaign against Weimar Culture:
 	- The "Action against Un-German Spirit" book burning in May
 - Anti-Semitism through boycotting Jewish business
@@ -19,10 +23,11 @@
 
 ## Consent: The Nazification of German Society
 - There were 800k NSDAP members in January... 1.5M in March!
-- Attitude of intellectuals, e.g. Martin Heidegger was generally supportive of the Nazis
-- The Christian churches did not oppose Nazi rule either, the Pope even signing the *Reichsconcordat*.
-- The Protestant Church
-- German Christians
+- Attitude of intellectuals, e.g. Martin Heidegger was supportive of the Nazis
+- The Christian churches did not oppose Nazi rule either, the Pope even signing the *Reichsconcordat*, which ended all political activity of Catholics in Germany in exchange for being allowed to exist.
+	- Essentially dissolves the center parties of Germany.
+- The Protestant Church tried to assert some independence.
+- German Christians embraced National Socialism.
 
 ## Conflict with the SA (Stormtroopers)
 - Ending the revolution versus demand for a second revolution
