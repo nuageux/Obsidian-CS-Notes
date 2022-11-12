@@ -39,6 +39,7 @@
 	- Unified Cache: holds both.
 - Example on how it affects the PE on slide 56.
 - Compiler uses "prefetching", getting a size of block that will cover the next few access instances. Of course, it's just a guess.
+- Remember that you have to access both the I-cache and the D-cache for every load instruction.
 
 ### Direct-Mapped Caches
 - A cache that can put a block of data in exactly one place is called Direct Mapped.
