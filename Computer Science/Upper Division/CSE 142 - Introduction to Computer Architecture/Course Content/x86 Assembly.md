@@ -10,12 +10,25 @@
 	- Critical code sequences in system-level software
 - x86 is a 64-bit **ISA (Instruction Set Architecture)**.
 	- ISAs define the instruction formats, instruction operations, and interactions with memory.
+	- x86 is a **CISC** ISA, a complex instruction set computer. It's more human readable (better interface), and is under constant pressure to add more features.
+		- Varying amount of work per instruction
+		- Variavle length instructions
+		- No limitations on how instructions interact with memory
+	- As opposed to **RISC** ISAs, reduced instruction set computers. 
+		- There's a fixed amount of work per instruction
+		- Fixed *length* instructions
+		- Forced behavior with memory.
+		- Better for implementation.
 - x86 is... a poorly-designed ISA.
+	- Switching ISAs is difficult because it requires new binaries.
+	- x86 is still alive because it had a lot of momentum when it came out.
 
 # Basics of Assembly
 - We use AT&T syntax for this class, a.k.a. the gnu assember ("gas") syntax.
 	- As opposed to "Intel Syntax". When you see examples online, make sure you know what the syntax is.
 	- So for AT&T, it is generally `<instruction> <src2> <src1/dst>`.
+- The **call stack** maintains the organization of the program stack.
+	- The stack actually "grows" from the "ceiling" of memory, so to pop something we add to the memory address and vice-versa.
 ## Key Operations
 ### Arithmetic
 - Basic Arithmetic
@@ -55,19 +68,12 @@
 		- `%rip`, which is the intruction pointer (or the program counter).
 - Since we are dealing with 64-bit, to access the lower 32 bits, we replace the `r` with an `e` in the above commands.
 ### Memory
+- The basic principle is that registers are fast, while memory is slow.
+	- This should incentivize us to access memory infrequently.
 ### Immediate Values
 ### Complex Addressing Modes
 - `%eax` simply means to access the value in register eax.
 - `(%eax)` means to access the **memory** location *at the value* in register eax.
 - `n(%eax)` means to add `n` to the value in register eax, then access that memory location.
 - `m(%eax %ebx n)` means to multiply the value in ebx by `n`, add the value in eax to it, add `m` to it, then access that memory location.
-
-## Common Instructions
-
-- mov S, D
-- add S, D
-- sub S, D
-- The **call stack** maintains the organization of the program stack.
-	- The stack actually "grows" from the "ceiling" of memory, so to pop something we add to the memory address and vice-versa.
-- push S
-- pop D
+- `lea` stands for "load effective address". It never actually accesses memory but instead works with the memory addresses.

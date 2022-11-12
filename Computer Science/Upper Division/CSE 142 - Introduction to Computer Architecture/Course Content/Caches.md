@@ -9,7 +9,7 @@
 - It also allows the OS to use main memory to cache the most recently used disk blocks in the disk file system.
 - A function that visits each element of a vector sequentially is called a *stride-1 reference pattern*, or a *sequential reference pattern*.
 	- 1 refers to the step size.
-	- e.g. row-major traversal enjoys good stride-1 locality, but a col-major traversal ends up with stride-n locality.
+	- e.g. row-major traversal enjoys good stride-1 locality, but *a col-major traversal ends up with stride-n* locality.
 ### Temporal Locality
 - Again, temporal locality exists when a program accesses the same memory multiple times within a short time frame.
 
@@ -26,7 +26,7 @@
 	- *Compulsory* misses result from trying to access an empty cache.
 	- *Conflict* misses refer to when restrictive placement policies, such as mapping blocks to a singular block.
 	- *Capacity* misses result from when the cache is simply too small to be working with a particular data set.
-	- To decide what data to throw out, we usually select the Least Recently Used (**LRU**).
+	- To decide what data to throw out, we usually select the Least Recently Used (**LRU**)... the dustiest book in the shelf (cuz nobody's reading it).
 - Some terminology:
 	- Hit: an access where the data is found in the cache.
 	- Miss: an access where the data isn't found in the cache.
@@ -37,6 +37,8 @@
 	- Instruction Cache: only holds instructions
 	- Data Cache
 	- Unified Cache: holds both.
+- Example on how it affects the PE on slide 56.
+- Compiler uses "prefetching", getting a size of block that will cover the next few access instances. Of course, it's just a guess.
 
 ### Direct-Mapped Caches
 - A cache that can put a block of data in exactly one place is called Direct Mapped.
@@ -69,6 +71,17 @@
 	- **\#entries = cache_size / (block_size \* n)**
 	- \#index_bits = log_2(\# entries)
 	- \#tag_bits = address_size - \#index_bits - \#offset_bits 
+
+## Handling Stores
+- Fundamentally different than loads:
+	- Are *non-blocking*, meaning we can just write to a store buffer.
+- Store miss policies:
+	- Write Allocate: brings the cache block into the cache, then use the store hit policy.
+	- Write No-Allocate: just notifies the lower levels of the cache about what was changed.
+- Store hit policies:
+	- Write Through: tell lower levels cache what was changed immediately.
+		- Uses bandwidth
+	- Write Back: mark the block as dirty as tell lower levels of cache about the change when the block is evicted.
 
 # Measuring Cache Performance
 - *Performance Counters* allow us to measure cache performance.
