@@ -23,14 +23,18 @@ Here are the tags currently being used:
 - History
 
 - Algorithm
+- Computer Architecture
 - Data-Structure
 - Model
 - Project
 - Proof
 
+- Assembly
+- ARM
 - C-plus-plus
 - CSS
 - HTML
 - JavaScript
 - Python
 - SQL
+- x86

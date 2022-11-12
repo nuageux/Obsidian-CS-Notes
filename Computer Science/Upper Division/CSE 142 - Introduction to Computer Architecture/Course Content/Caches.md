@@ -1,3 +1,4 @@
+#Practical #Computer-Architecture
 ## Locality
 - The tendency to reference data items that are near other recently referenced data items or that were recently referenced themselves.
 	- This is a good thing. Usually the program will run faster!
@@ -9,13 +10,15 @@
 - A function that visits each element of a vector sequentially is called a *stride-1 reference pattern*, or a *sequential reference pattern*.
 	- 1 refers to the step size.
 	- e.g. row-major traversal enjoys good stride-1 locality, but a col-major traversal ends up with stride-n locality.
+### Temporal Locality
+- Again, temporal locality exists when a program accesses the same memory multiple times within a short time frame.
 
 ## Memory Hierarchy
 - As follows, smallest/fastest/expensive to largest/slowest/cheapest: Registers, L1 Cache, L2 Cache, L3 Cache, Main Memory, Local Secondary Storage, Remote Secondary Storage.
 - So SRAM is much faster with a greater bandwidth than DRAM.
 	- We have small and fast OR large and slow.
 
-## Caching
+# Caches
 - A **cache** is a small, fast storage device that acts as a staging area for the data objects stored in a larger, slower device.
 - The general idea is that each level in the hierarchy caches data objects from the next lower level.
 - Cache "hits" refer to successful cache searches, i.e. the item we were looking for was in the cache.
@@ -34,7 +37,6 @@
 	- Instruction Cache: only holds instructions
 	- Data Cache
 	- Unified Cache: holds both.
-
 
 ### Direct-Mapped Caches
 - A cache that can put a block of data in exactly one place is called Direct Mapped.
@@ -67,4 +69,14 @@
 	- **\#entries = cache_size / (block_size \* n)**
 	- \#index_bits = log_2(\# entries)
 	- \#tag_bits = address_size - \#index_bits - \#offset_bits 
-	 
+
+# Measuring Cache Performance
+- *Performance Counters* allow us to measure cache performance.
+	- They are hardware components in the CPU that measure performance-related events, such as instructions executed, cache misses, branch mispredictions, etc.
+- **Tensors** are multi-dimensional arrays.
+- Prof. Swanson has created the **Miss-Machine**, a #Data-Structure that forces the cache to constantly miss by randomly iterating through a linked list.
+- **Data-alignment** describes the behavior of the compiler to assign data to sections of the cache that match its size (by a multiple).
+	- *Width-alignment* is when a value is aligned to its own size in bytes in memory.
+	- So interestingly, within `structs` in C++, if a data member is not as big as the struct itself, the compiler will "pad" the member with empty memory to allow clean cache accesses.
+		- The lesson is to organize your struct members by size, largest to smallest.
+	- If data were not to be aligned, it would cause more cache misses than necessary.

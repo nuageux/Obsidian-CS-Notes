@@ -10,8 +10,10 @@ Course Description:
 ### Course Content
 - [[Measuring Performance]]
 - [[x86 Assembly]]
+- [[The Compiler]]
 - [[Caches]]
 - [[Virtual Memory]]
+- [[Executing Instructions Efficiently]]
 
 ## 142L: Software Project for Computer Architecture
 Accompanying lab course. "Provides hands-on experience in using the features of modern CPUs to increase the performance and efficiency of programs."

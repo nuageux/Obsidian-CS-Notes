@@ -1,3 +1,4 @@
+#Practical #Computer-Architecture 
 # Performance
 There are different ways to define computer performance.
 - **Response Time**, or execution time, is the total time required for the computer to complete a task.
@@ -27,11 +28,21 @@ are discrete time intervals, a.k.a. clock ticks or periods.
 - Consider the following 2 equations:
 	- **Execution Time = \# Clock Cycles * Cycle Time**
 	- **Execution Time = \# Clock Cycles / Clock Rate**
+- Cycles per Instruction is affected by the ISA Designer, Compiler, Programmer, and Hardware Designer.
+	- Thus, CPI is the most complex term in the PE, since many things affect it.
+	- Note that different instructions require different amounts of work, so instructions that do more work generally increease CPI.
+- Cycle Time is affected by the Hardware Designer, and sometimes a little by the ISA Designer.
+	- Processor design, manufacturing variation, and software policy affect CT.
 
 ### Instruction Performance
-The number of clock cycles required for a program can be represented as
-- **\# Clock Cycles = \# Instructions * Average \# Cycles per Instruction (CPI)**
- 
+- The number of clock cycles required for a program can be represented as
+	- **\# Clock Cycles = \# Instructions * Average \# Cycles per Instruction (CPI)**
+- The instruction count is affected by the ISA Designer, the Compiler, and the Programmer.
+- *Dynamic* instruction count is what is represented in the performance equation.
+	- Has to do with the execution of the program or counted at run time.
+	- As opposed to *static* instructions, which are fixed at compile time or referring to the program as it was compiled.
+
+## The Performance Equation
 So, **CPU time = Instruction Count \* CPI \* Clock Cycle Time.**
 - Alternatively **CPU time = Instruction Count * CPI / Clock Rate**.
 - What differentiates the CPU time equations are that they are dependent on the number of instructions in a *specific* program.
@@ -43,7 +54,7 @@ So, **CPU time = Instruction Count \* CPI \* Clock Cycle Time.**
 	- Keep in mind that the common case *is hard to pin down!* Engineers miss it all the time.
 		- Look for what is *time-consuming* overall, **not** for the frequency!
 
-#### Here is Amdahl's Law:
+## Amdahl's Law:
 - **Execution Time After Improvement = ( ExeTime Affected by Improvement / Amount or Factor of Improvement ) + ExeTime Unaffected by Change**
 	- In other words, **Total Speedup = 1 / ( ( x / S ) + ( 1 - x ) )**
 		- Where $x$ is the fraction of the program being optimized, and $S$ is the speedup provided.
@@ -59,13 +70,20 @@ So, **CPU time = Instruction Count \* CPI \* Clock Cycle Time.**
 		- Instead, we wish to improve the quality of the gameplay, e.g. in the details with ray tracing
 	- In physics simulations, the time it takes to generate the simulation will remain the same, but scientists certainly appreciate a higher order of detail whenever they can get it.
 
-## Power
+# Power
 - Remember that **watts = Joules / second**.
-- Power, for our purposes, is **P = F^3 * a * C + P_idle**.
-	- F is the processor frequency
-	- a is the activity factor, or the fraction of transistors switching each cycle.
-	- C is the capacitance of the chip
-	- P_idle is the power consumed when the processor is doing nothing.
-- **Energy = Power * Time**
+- Energy and power constrain modern processors.
+	- Energy is expensive!
+	- Power creates heat, and cooling costs thus cost money.
+### Power Equation
+- Power is $P = V^2 * F * a * C + P_{idle}$.
+	- $V$ is the processor core voltage
+		- Is usually a similar value to $F$.
+	- $F$ is the processor frequency
+	- $a$ is the activity factor, or the fraction of transistors switching each cycle.
+	- $C$ is the capacitance of the chip
+	- $P_{idle}$ is the power consumed when the processor is doing nothing.
+- $Energy = Power * Time$
 	- So the power equation * ET = energy.
-  
+
+**All of these metrics can be compared to (fairly) impartial benchmark tests.**
