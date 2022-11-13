@@ -1,3 +1,4 @@
+#Graphics #Math
 ## Vector Graphics
 - We *could* use a low-level geometry representation, with lines, triangles, etc...
 	- It's easy to store and render.

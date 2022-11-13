@@ -1,3 +1,4 @@
+#Graphics #OpenGL
 # Modern OpenGL
 Which allows us to program the GPU.
 - OpenGL is a specification of what functions should exist, an API.

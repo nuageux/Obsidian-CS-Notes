@@ -1,3 +1,4 @@
+#Math
 # Linear Algebra
 Covered in [[MATH 18 - Linear Algebra]] and [[MATH 20C - Calculus & Analytic Geometry]].
 

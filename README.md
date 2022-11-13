@@ -13,6 +13,7 @@ Here are the tags currently being used:
 - CSE
 - Economics
 - Math
+- Physics
 
 - Data-Science
 - Database
@@ -25,6 +26,7 @@ Here are the tags currently being used:
 - Algorithm
 - Computer Architecture
 - Data-Structure
+- Graphics
 - Model
 - Project
 - Proof
@@ -35,6 +37,7 @@ Here are the tags currently being used:
 - CSS
 - HTML
 - JavaScript
+- OpenGL
 - Python
 - SQL
 - x86

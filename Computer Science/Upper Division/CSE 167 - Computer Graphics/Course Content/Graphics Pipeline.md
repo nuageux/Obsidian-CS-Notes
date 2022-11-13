@@ -1,3 +1,4 @@
+#Graphics #OpenGL
 # The Graphics Pipeline
 ## The Main Algorithm
 - The inputs include:

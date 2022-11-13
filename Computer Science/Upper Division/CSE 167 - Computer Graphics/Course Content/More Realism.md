@@ -1,3 +1,4 @@
+#Graphics #Physics
 ## Environment Mapping
 - Centered around the question as to what color/texture to assign the fragment.
 	- Based on how light is reflected.
