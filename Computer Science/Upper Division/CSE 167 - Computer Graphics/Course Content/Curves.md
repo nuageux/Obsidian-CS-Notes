@@ -69,5 +69,6 @@ point lerp(point p, point q, float t) {
 	- Diagonal Consistency
 - In general... $$ F(t_1, t_2, t_3) = at_1t_2t_3 + b *(t_1t_1+t_2t_3 + t_1t_3)/3 + c*(t_1 + t_2 + t_3) /3 + d$$
 ## B-Spline
-- 
+- There is a general lerp equation for more points than just 0 and 1. Remember barycentric coordinates?
+- For the cubic B-spline, we have $n+1$ control points and build a function $f(t)$ consisting of $n-1$ segments.
 ## Subdivision
