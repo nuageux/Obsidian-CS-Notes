@@ -44,9 +44,80 @@
 - Our first solution for data hazards is to stall, but that's undesirable.
 - Our second solution is also to stall, but to also include register file "forwarding".
 	- Immediately passing values to the next read cycle from the current write cycle.
-	- The way we will forward is to take the value at the current execute cycle to the next execute file. This takes a bunch of logic, but it's worth it.
+- Improving on that idea, we will forward the value at the current execute cycle to the next execute file. This takes a bunch of logic, but it's worth it.
+	- We do this by adding hardware connections to bypass the register file in the pipeline.
 
 # Micro-Ops
-
+- A main issue with pipelining x86 is that each instruction can have different amounts of work.
+	- The solution is to translate all complex instructions into a bunch of modular, simple ones.
+- So now we separate our pipeline into a front end and back end...
+	- Frontend
+		- Fetch: Retrieve the instruction from memory using PC, predict the next PC
+		- Decode: *Decompose instruction into uOps, enqueue the resulting uOps in the decode queue*
+	- Backend
+		- RF Read: *Dequeue a uOp from the decode queue and read the register operants for the instruction*
+		- Execute: *Perform uOp* operations
+		- RF Write: Update register file
+		- Compute Next PC: Detect mispredictions
 
 # Pushing for More...?
+### Deeper Pipelining
+- The idea is to split the pipeline instructions.
+![[image - split pipeline.png]]
+- Because all that matters is the longest stage of the pipeline (the critical path), if splitting the hardware means we have shorter circuitry somewhere, it means we reduce cycle time (at the cost of more circuitry, of course).
+	- This circuitry translates into power problems.
+- Theoretically, CT should drop by half if we double the number of stages.
+	- However, there is an overhead between each stage of just reading and writing to pipeline registers. Recall combinational and sequential logic from [[CSE 140 - Component & Design Techniques for Digital Systems]].
+	- Furthermore, it requires all stages to be balanced.
+- Right now, 14 seems to be the "right" number of pipeline stages.
+### Instructional Level Paralellism
+- It's possible to reduce the CPI below 1.
+	- We need to execute more than one instruction per cycle...
+		- Multiple or "wide" issue
+		- Out-of-Order Execution
+##### Multiple Issue
+- We will learn the hardware method, the "superscalar" method (then the out-of-order version.
+	- Superscaler means several instructions are loaded at once and executed simultaneously.
+- Literally just do 2 instructions per step instead of one.
+	- It usually stops at 2, because data dependencies become a mess the more we push this.
+- More challenges:
+	- Forwarding doesn't help, so it must stall.
+	- Lock-step execution lets instructions interfere with each other.
+	- Long-latency instructions mess with the pipeline too.
+	- ...so CPI gains suffer.
+- **The key terminology is n-issue, where the processor can start n instructions simultaneously.**
+
+#### Out-of-Order Execution
+- The modern solution...
+	- Exploits ILP (so CPI < 1), manages data dependencies, and deals with long-latency instructions.
+- **3 Steps**
+	- **Register Dependencies**
+		- Write-after-Write (WAW)
+			- Where B writes to edx after A writes to edx...
+				- So reordering gives the wrong result.
+			- A *false* dependency on edx, since *no data flows from A to B*, but *A must execute before B*.
+			- We can just put the result of A in a different register to break the dependency.
+		- Write-after-Read (WAR)
+			- Where B writes to edx after A reads edx...
+				- So reordering gives the wrong result.
+			- A *false* dependency on edx for the same reason in WAW.
+			- We can just put the result of B in a different register to break the dependency.
+		- Read-after-Write (RAW)
+			- Where B reads eax after A writes to eax...
+				- We cannot even reorder! Otherwise the value that B needs doesn't even exist!
+			- This is a **true** dependency on eax, since data flows from A to B!
+		- We need to look at the **dependency graph**.
+			- Nodes are instructions and edges represent dependencies between them.
+			- We need to identify the critical path with the *longest sequence of RAW, WAW, and/or WAR dependent instructions.*
+				- The length of this path is the minimum execution time.
+				- Assuming each instruction takes one cycle:
+					- Ideal CPI = Critical Path / \# instructions
+					- Avg ILP = 1 / CPI = IC / CP
+				- So... ET = CP \* CT
+				- We'll call the instruction's contribution to the CP its "effective latency".
+					- If not on the CP, it's 0. If on, it's the number of added cycles.
+	- **Register Renaming**
+		- We can break false dependencies by renaming registers used (and thus use out-of-order execution).
+		- *There can be many more physical registers than architectural registers*!
+		- We will use the **Register Alias Table (RAT)**.
+	- **Out-of-Order Issue**

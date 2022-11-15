@@ -14,6 +14,7 @@ Course Description:
 - [[Caches]]
 - [[Virtual Memory]]
 - [[Executing Instructions Efficiently]]
+- [[Memory Level Parallelism]]
 
 ## 142L: Software Project for Computer Architecture
 Accompanying lab course. "Provides hands-on experience in using the features of modern CPUs to increase the performance and efficiency of programs."
