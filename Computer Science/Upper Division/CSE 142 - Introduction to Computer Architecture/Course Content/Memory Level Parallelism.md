@@ -1,3 +1,2 @@
 #Practical #Computer-Architecture 
-### Critical Paths
-- asdf
+- Key idea: introducing caches, making branches predictable can significantly improve performance (despite big-O)!

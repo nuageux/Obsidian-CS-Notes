@@ -120,4 +120,21 @@
 		- We can break false dependencies by renaming registers used (and thus use out-of-order execution).
 		- *There can be many more physical registers than architectural registers*!
 		- We will use the **Register Alias Table (RAT)**.
+			- It renames architectural registers to physical registers.
 	- **Out-of-Order Issue**
+		- **Tomasulo's Algorithm**: Issuing instructions with reservation stations
+		- The **Reorder Buffer (ROB)**: Has a retirement frontier, a fetch frontier, and a speculation frontier.
+
+
+
+- Our pipeline is then as follows:
+	- Frontend
+		- Fetch: Retrieve the instruction from memory using PC, predict the next PC
+		- Decode: *Decompose instruction into uOps, enqueue the resulting uOps in the decode queue*
+	- Backend
+		- *Dequeue: Move uOps from the decode queue to the ROB*
+		- RF Read: *Rename the registers for those uOps*
+		- *Schedule uOps: Select uOps whose inputs are available, issue them*
+		- Execute: *Perform uOp* operations
+		- RF Write: *Broadcast results to the scheduler; update the physical register file*
+		- Compute Next PC: Detect mispredictions, send results to front end.
