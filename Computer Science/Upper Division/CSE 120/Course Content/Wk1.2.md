@@ -1,0 +1,19 @@
+- the operating system refers to the "kernel", the part of the OS that all other programs depend on and that can be accessed via "system calls"
+	- kernel can access hardware device registers, can respond to harware interrupts
+	- allocates basic resources like cpu time, memory space, and the use of i/o devices. 
+- the OS "defines the basic laws of physics" of the "computer system universe".
+- "abstract machine" what the programmer sees and is limited to seeing
+	- goals: simplicity and convenience
+	- the target is the programmer
+- manage resources, anything that allows work to get done (something that provides functionality)
+	- ex: memory space, cpu time
+	- "manage"
+	- goals: performance, reliability, security
+- "turns the undesirable into the desirable", the undesirable inconvenience (reality) into desriable conveniences (illusions). i.e. limits are "removed" and masked.
+- abstraction, mechanism, and policy
+	- A is the what is the desired illution?
+	- M is how is this illusion created?
+		- mechanisms are fixed; it works one way and only that way.
+	- P is which way should the M be used, to meet a goal?
+		- a policy is variable and depends on the goals of the system
+	- 
