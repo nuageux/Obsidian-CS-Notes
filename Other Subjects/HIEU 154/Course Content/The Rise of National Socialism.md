@@ -13,7 +13,7 @@
 - Creating the SA as a paramilitary formation: the "double bind" of law and order.
 
 ## Nazi Appeal
-- The Germans are still mad about hte Versailles treaty (understandably).
+- The Germans are still mad about the Versailles treaty (understandably).
 - Nazis denounce the "November criminals".
 - A strong appeal to front sociers and the "war youth" generation.
 - Appeals to rural workers and farmers.
