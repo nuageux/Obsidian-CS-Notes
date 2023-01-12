@@ -1,0 +1,31 @@
+- challenge: design scalable and portable software that will last through many hardware generations
+- CPU latency oriented design: compiler/architecture finds parallelism and maps to the hardware.
+	- high clock frequency
+	- large caches
+		- to reduce memory latency
+		- O(100) cycles -> O(1) cycle
+	- sophisticated control
+		- reduce branch latency via prediction
+		- data forwarding for reduced data latency
+	- powerful ALUs
+		- reduced operation latency
+- GPU throughput oriented design: programmer finds the parallelism and maps to the hardware
+	- moderate clock freq
+	- small caches
+		- boost memory thoughput
+	- simple control
+		- no branch prediction nor data forwarding
+	- energy efficient ALUs
+		- many long latency but heavily pipelined for high throughput
+
+ - So the winning strategy is "heterogeneity"
+	 - cpus for sequential parts where latency matters
+	 - gpus for parallel parts where throughput wins
+
+- the workflow
+	- identify compute intensive parts of an application
+	- adopt create scalable algorithms
+	- optimize data arrangements to maximize locality
+	- performance tuning
+	- **code portability, scalability, and maintainability**
+- 
