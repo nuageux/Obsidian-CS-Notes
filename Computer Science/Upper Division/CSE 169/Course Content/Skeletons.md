@@ -1,0 +1,16 @@
+## Matrix Algebra Review
+- 3d models
+	- has an array of position vectors describing its shape
+	- each vector in the n-array has 3 components x y and z
+- to move the model, we call it a translation
+	- compute a new array of positions representing the new location
+	- if d represents an offset, we simply add that vector d to our position array
+- a translation is a simple example of a transformation
+- remember that this is effectively a loop over the bunch of n vertices
+- can be written as vertical vectors or a system of equations
+- rotation by angle theta
+	- ![[Pasted image 20230112170616.png]]
+	- ![[Pasted image 20230112170650.png]]
+	- rotation matrix times the 3-d vector
+	- other rotations defined in slides
+	- arbitrary axis rotation included

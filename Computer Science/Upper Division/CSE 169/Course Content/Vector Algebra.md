@@ -17,4 +17,3 @@
 	- The result is a vector perpendicular to both a and b in the direction specified in the right hand rule.
 	- It's asymmetric.  $a \times b = -b \times a$.
 	- The magnitude is: ![[Pasted image 20230111130044.png]]
-	- 
