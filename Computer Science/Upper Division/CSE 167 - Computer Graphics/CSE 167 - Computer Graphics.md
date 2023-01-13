@@ -10,17 +10,17 @@ Course Description:
 #### Course Content
 ##### Introduction
 - Computer Graphics is the use of computers to synthesize visual information.
-- [[Graphics Pipeline]] <!-- done -->
-- [[OpenGL]] <!-- done -->
-- [[Linear Algebra]] <!-- done -->
-- [[3D Rotations]]
-- [[Affine Geometry]]
-- [[Projective Geometry]]
-- [[Hierarchical Modeling]]
-- [[Lighting]]
-- [[Interpolation]]
-- [[Texture]]
-- [[More Realism]] <!-- done -->
+- [[Graphics Pipeline]]
+- [[OpenGL]]
+- [[Linear Algebra]]
+- 3D Rotations
+- Affine Geometry
+- Projective Geometry
+- Hierarchical Modeling
+- Lighting
+- Interpolation
+- Texture
+- [[More Realism]]
 - [[Curves]] <!-- WIP -->
-- [[Surfaces]]
-- [[Ray Tracing]]
+- Surfaces
+- Ray Tracing

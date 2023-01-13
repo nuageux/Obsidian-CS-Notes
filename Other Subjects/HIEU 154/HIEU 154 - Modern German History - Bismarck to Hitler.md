@@ -41,7 +41,7 @@ Course Description:
 	- [[The National Community]]
 	- [[Social Outsiders]]
 - ##### War and Genocide    <!-- Week 9 -->
-	- [[The Second World War]]
+	- The Second World War
 - ##### Genocide and Aftermath    <!-- Week 10 -->
-	- [[Guest Lecturer - Mark Roseman]]
-	- [[Holocaust and Aftermath]]
+	- Guest Lecturer - Mark Roseman
+	- Holocaust and Aftermath
