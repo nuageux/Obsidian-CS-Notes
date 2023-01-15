@@ -1,11 +1,11 @@
 #Course #CSE 
-Prerequisites: 
+Prerequisites: [[CSE 100 - Advanced Algorithms & Data Structures]]
 
 Winter 2023
 Instructor: Prof. Ryan Kastner
 
 Course Description:  
-""
+"Introduction to high performance parallel computing: parallel architecture, algorithms, software, and problem-solving techniques. Areas covered: Flynn’s taxonomy, processor-memory organizations, shared and nonshared memory models: message passing and multithreading, data parallelism; speedup, efficiency and Amdahl’s law, communication and synchronization, isoefficiency and scalability."
 
 #### Course Content
 - [[Parallel Computing & CUDA]]

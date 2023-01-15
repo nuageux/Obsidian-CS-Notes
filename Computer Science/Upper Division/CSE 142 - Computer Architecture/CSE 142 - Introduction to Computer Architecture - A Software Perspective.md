@@ -1,5 +1,5 @@
 #Course #CSE 
-Prerequisites: [[CSE 30 - Computer Organization and Systems Programming]], [[CSE 100 - Advanced Algorithms and Data Structures]]
+Prerequisites: [[CSE 30 - Computer Organization & Systems Programming]], [[CSE 100 - Advanced Algorithms & Data Structures]]
 
 Fall 2022
 Instructor: Prof. Leo Porter & Prof. Steven Swanson

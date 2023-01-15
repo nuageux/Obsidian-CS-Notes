@@ -1,3 +1,5 @@
+#OS
+# Operating Systems
 - the operating system refers to the "kernel", the part of the OS that all other programs depend on and that can be accessed via "system calls"
 	- so OS is software that makes computers easier to use
 	- kernel can access hardware device registers, can respond to hardware interrupts

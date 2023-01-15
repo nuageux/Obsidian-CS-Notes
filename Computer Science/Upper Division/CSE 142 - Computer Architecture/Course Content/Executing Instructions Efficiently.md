@@ -67,7 +67,7 @@
 - Because all that matters is the longest stage of the pipeline (the critical path), if splitting the hardware means we have shorter circuitry somewhere, it means we reduce cycle time (at the cost of more circuitry, of course).
 	- This circuitry translates into power problems.
 - Theoretically, CT should drop by half if we double the number of stages.
-	- However, there is an overhead between each stage of just reading and writing to pipeline registers. Recall combinational and sequential logic from [[CSE 140 - Component & Design Techniques for Digital Systems]].
+	- However, there is an overhead between each stage of just reading and writing to pipeline registers. Recall combinational and sequential logic from [[CSE 140 - Components & Design Techniques for Digital Systems]].
 	- Furthermore, it requires all stages to be balanced.
 - Right now, 14 seems to be the "right" number of pipeline stages.
 ### Instructional Level Paralellism

@@ -1,5 +1,5 @@
 #Course #CSE
-Prerequisites: [[CSE 12 - Basic Data Structures and Object-Oriented Design]], [[CSE 15L - Software Tools and Techniques Laboratory]], [[CSE 21 - Mathematics for Algorithms and Systems]], [[CSE 30 - Computer Organization and Systems Programming]]
+Prerequisites: [[CSE 12 - Data Structures and Object-Oriented Design]], [[CSE 15L - Software Tools and Techniques]], [[CSE 21 - Mathematics for Algorithms and Systems]], [[CSE 30 - Computer Organization & Systems Programming]]
 
 Winter 2022
 Instructor: Prof. Niema Moshiri

@@ -1,5 +1,5 @@
 #Course #CSE
-Prerequisites: [[CSE 12 - Basic Data Structures and Object-Oriented Design]], [[CSE 15L - Software Tools and Techniques Laboratory]]
+Prerequisites: [[CSE 12 - Data Structures and Object-Oriented Design]], [[CSE 15L - Software Tools and Techniques]]
 
 Spring 2021
 Instructor: Prof. Bryan Chin

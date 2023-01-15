@@ -1,3 +1,4 @@
+#Math 
 - Use of a right-handed coordinate system.
 - Recall that **a** refers to a vector aligned vertically (or a transposed horizontal vector).
 - Recall that the *magnitude* of a vector is $|v| = \sqrt{v^2_x + v^2_y + v^2_z}$.

@@ -1,6 +1,6 @@
 #Assembly #x86
 # x86 Assembly
-- This is a throwback to **assembly language** from [[CSE 30 - Computer Organization and Systems Programming]].
+- This is a throwback to **assembly language** from [[CSE 30 - Computer Organization & Systems Programming]].
 	- Is a readable form of **machine code**.
 - A **compiler** translates a human-readable programming language into a language that a computer understands.
 - Reasons to learn machine code:

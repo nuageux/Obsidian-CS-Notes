@@ -1,5 +1,5 @@
 #Course #CSE
-Prerequisites: [[CSE 11 - Introduction to Programming and Computational Problem-Solving]]
+Prerequisites: [[CSE 11 - Programming and Computational Problem-Solving]]
 
 Spring 2021
 Instructor: Prof. Miles Jones
