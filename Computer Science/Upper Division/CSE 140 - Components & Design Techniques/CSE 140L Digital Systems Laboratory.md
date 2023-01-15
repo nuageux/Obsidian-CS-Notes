@@ -1,5 +1,5 @@
 #Course #CSE #Lab
-Prerequisites: [[CSE 20 - Discrete Mathematics]], [[CSE 30 - Computer Organization and Systems Programming]]
+Prerequisites: [[CSE 20 - Discrete Mathematics]], [[CSE 30 - Computer Organization & Systems Programming]]
 
 Fall 2021
 Instructor: Prof. Eldon John

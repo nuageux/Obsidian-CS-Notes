@@ -1,5 +1,5 @@
 #Course #CSE
-Prerequisites: [[CSE 11 - Introduction to Programming and Computational Problem-Solving]]
+Prerequisites: [[CSE 11 - Programming and Computational Problem-Solving]]
 
 Winter 2021
 Instructor: Prof. Greg Miranda
