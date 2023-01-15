@@ -1,85 +1,85 @@
 #OS
 # Operating Systems
-- the operating system refers to the "kernel", the part of the OS that all other programs depend on and that can be accessed via "system calls"
-	- so OS is software that makes computers easier to use
-	- kernel can access hardware device registers, can respond to hardware interrupts
-	- allocates basic resources like cpu time, memory space, and the use of i/o devices. 
-- the OS "defines the basic laws of physics" of the "computer system universe".
-- "abstract machine" what the programmer sees and is limited to seeing
-	- goals: simplicity and convenience
-	- the target is the programmer
-- manage resources, anything that allows work to get done (something that provides functionality)
-	- ex: memory space, cpu time
-	- "manage"
-	- goals: performance (speed, efficiency), reliability (correctness, fault tolerance), security (privacy, authenticity, integrity)
-- "turns the undesirable into the desirable", the undesirable inconvenience (reality) into desriable conveniences (illusions). i.e. limits are "removed" and masked.
-	- reality
-		- complexity of hardware
-		- limited number and amount of processors and memory
-	- illusion
-		- simple resources
-		- unlimited processors and memory
-- abstraction, mechanism, and policy
-	- A is the what is the desired illution?
-		- the abstract machine provides an interface for the programmer
-	- M is how is this illusion created?
-		- mechanisms are fixed; it works one way and only that way.
-	- P is which way should the M be used, to meet a goal?
-		- a policy is variable and depends on the goals of the system
+- The operating system refers to the "kernel", the part of the OS that all other programs depend on and that can be accessed via "system calls".
+	- In other words, OS is software that makes computers easier to use.
+	- The kernel can do exclusive actions such as accessing hardware device registers or responding to hardware interrupts.
+	- It furthermore allocates basic resources like CPU time, memory space, and the use of I/O devices.
+- The OS "defines the basic laws of physics" of the "computer system universe".
+- Consider an "abstract machine"; what the programmer sees and is limited to seeing.
+	- The goals of such a concept are *simplicity* and *convenience*.
+- "Resources" refers to anything that allows work to get done (something that provides functionality).
+	- e.g. memory space, CPU time
+	- The goals include: **performance** (speed, efficiency), **reliability** (correctness, fault tolerance), and **security** (privacy, authenticity, integrity).
+- The OS "turns the undesirable into the desirable"; the undesirable inconvenience (reality) into desriable conveniences (illusions), i.e. limits are "removed" and masked.
+	- What's the Reality?
+		- Complexity of hardware
+		- A limited number and amount of processors and memory
+	- What's the Illusion?
+		- Simple resources
+		- Unlimited processors and memory
+#### Three Key Ideas
+- **Abstraction**, **Mechanism**, and **Policy**
+	- A: What is the desired illusion?
+		- The "abstract machine" provides an interface for the programmer.
+	- M: How is this illusion created?
+		- Mechanisms are fixed; it works one way and only that way.
+	- P: Which way should the M be used, to meet a goal?
+		- A policy is variable and depends on the goals of the system.
 
 # Processes
-- are an abstraction of a running program. "a program in **execution**"
-	- it's dynamic, has states and changes as time passes
-	- a program on the other hand is static
-- basic resources for processes
-	- cpu
+- The most basic kernel function is to run a program. Following this train of thought, the user will want the ability to run multiple programs simultaneously. 
+	- ...this isn't possible! But how can we create an illusion as if it is?
+- Introducing the **process**, an abstraction of a running program. 
+	- It is a program in **execution**.
+	- A process is *dynamic*, it has states and changes as time passes.
+		- A program, on the other hand, is static.
+- The basic resources for a process are:
+	- The CPU
 		- processing cycles (time)
 		- to execute instructions
-	- memory
+	- Memory
 		- bytes or words (space)
 		- to maintain states
 	- etc.
-- context of a process: machine and kernel-related state
-	- cpu context is the values of the registers
-		- pc is the **program counter**, sp is the **stack poitner**, fp is the frame pointer, gp is general, etc.
-	- memory context: pointers to memory areas
-		- like code, static variables, heap, shared
-		- stack of activation records(?)
-			- an activation record is all the information we need for keeping track of a procedure (method or function) that was called.
-			- we find
-				- where to return to
-				- link to the previous record
-					- so we know how much to pop off the stack
-				- automatic (local) variables
-				- other (like register values)
-			- stack pointer points to the top of the stack
-	- memory is composed of three parts. we need this abstraction to create the mechanism for the abstraction of multiple cpus.
-	- text, data, stack
-	- "what does memory look like to a process?"
-- SO THE GOALLL is to **support multiple processes**
-	- users would like to run multiple programs "simultaneously"
-	- not all actively using the cpu
-	- some are waiting for input, devices, etc
-- how to do this given a single cpu?
+- The **context** of a process is the machine and kernel-related state.
+	- The CPU context is the values of the registers.
+		- e.g. the PC is the **program counter**, the SP is the **stack pointer**, the FP is the frame pointer, etc.
+	- The memory context refers to pointers to memory areas.
+		- The areas are:
+			- Text
+				- The literal code/text files.
+			- Data
+				- Global variables and the heap, which is dynamically allocated.
+			- Stack
+				- Contains "activation records" and automatically grows and shrinks.
+- The goal is to **support multiple processes**.
+	- Not all processes will actively use the CPU.
+	- Some are waiting for input, devices, etc.
 
 ### Multiprogramming
-Given a running process
-- at some point needs a resource
-- and if resource is busy, process can't proceed
-- "voluntarily" gives up cpu to another process
-**"Yield"** (p) function
-- is a kernel call
-- Let process p run (voluntarily...)
-- requires context switching(?)
-	- the ability to save the context of the current process and to restore the context of another process that we want to yield to that we now want to run.
+Given a running process:
+- At some point, it will need a resource.
+- If that resource is busy, the process can't proceed.
+- Thus, the process will "voluntarily" give up the CPU resource to another process.
+
+Consider the **"Yield"** (p) function.
+- It is a kernel call.
+- "Let process p run (voluntarily)"!
+- Requires context switching.
+	- The ability to save the context of the current process and to restore the context of another process that we want to yield to that we now want to run.
+- The code for Yield is put in the kernel, and so are the process contexts.
+	- This way they are "protected".
 
 ### Context-Switching
-- first save the context of currently running process
-- next restore (load) context of next process to run
-to load the context
-- load general registers, stack pointer, etc.
-- load program counter (must be last instruction(?))
-	- so we gotta do all our context-saving before restoring the program counter, bc we can't backtrack after loading the pc
+- It is allocating CPU from one process to another.
+- First save the context of the currently running process.
+- Next, restore (load) the context of next process to run.
+	- Load the general registers, stack pointer, etc.
+	- Load the program counter. This must be done last.
+- Switch text and data.
+- Switch stacks. Note that the PC is still in the middle of Yield.
+- Context-Switching is then the *mechanism* that reassigns CPU between processes.
 
-The kernel is code that supports processes and runs as an extension of the current process
-- has text, data, and **multiple** stacks (one for each process/program that's running)!
+So, the kernel is code that supports processes and runs as an extension of the current process. It has text, data, and multiple stacks.
+
+See the *extensive* example within the lecture slides.
