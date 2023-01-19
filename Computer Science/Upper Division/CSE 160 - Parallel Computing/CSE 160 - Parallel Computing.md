@@ -10,7 +10,6 @@ Course Description:
 #### Course Content
 - [[Parallel Computing & CUDA]]
 - [[CUDA Parallel Execution Model]]
-- Data Parallel Applications
 - Image Processing with 2D Grids
 - Matrix Multiplication
 - Generalized Tiling and DRAM Bandwidth
