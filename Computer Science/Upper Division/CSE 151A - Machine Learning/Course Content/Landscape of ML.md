@@ -15,6 +15,8 @@
 		- The key difference is that the outputs lie on a scale, so if one makes a wrong prediction, one knows how bad the prediction was, relatively speaking.
 	- *Probability Values*
 		- e.g. credit card transactions (probability of fraud)
+		- Not a binary classification, because the ML outcome is simply a part of a larger decision making process that takes other numbers and inputs into account.
+		- This actually is a kind of regression. *But*, we don't allow values outside $[0,1]$.
 
 ### Unsupervised Learning
 - For finding good **representations**.

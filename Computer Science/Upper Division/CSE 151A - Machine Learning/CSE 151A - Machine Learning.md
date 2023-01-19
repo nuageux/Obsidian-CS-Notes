@@ -11,3 +11,5 @@ Course Description:
 - [[Nearest Neighbor Classification]]
 - [[Distance Functions for ML]]
 - [[Landscape of ML]]
+- [[Generative Models]]
+- 
