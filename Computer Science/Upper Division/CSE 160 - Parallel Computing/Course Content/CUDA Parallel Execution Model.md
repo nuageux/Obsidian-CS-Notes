@@ -7,15 +7,27 @@
 	- A CUDA kernel is executed by a grid (array) of threads.
 		- All threads in a grid run the same kernel code.
 		- "Single Program, Multiple Data" (SPMD)
+		- Threads don't execute at the same rate. So we group them in "warps" of 32 in order to force exeuction in lockstep (i.e. all threads will wait for the slowest thread to finish its instruction before they all move on to the next).
 		- Each thread has an index that it uses to compute memory addresses and make control decisions.
 		- The hierarchy is as follows: kernel -> grid -> block -> thread
 			- So to access an index in the device, it is `i = blockIdx.x * blockDim.x + threadIdx.x;`
 	- We can furthermore divide the thread array into multiple blocks.
 		- Threads within a block cooperate via a shared memory, atomic operations, and barrier synchronization.
 		- Threads in different blocks cooperate less.
-	- We define the dimensions of grids and blocks.
+	- We (programmers) define the dimensions of grids and blocks (there are 3 each, each is 1 by default).
 - See Vector Addition example.
 - As for function declarations:
 	- ![[Pasted image 20230117125747.png]]
 - ![[Pasted image 20230117130712.png]]
 - `cudaMalloc`, `cudaFree`, and `cudaMemcpy`
+
+### Program Flow
+- In the Host Code...
+	- Do sequential stuff
+	- Prepare for kernel launch
+	- Allocate memory on device (GPU)
+	- Copy data to the device (GPU)
+- Launch the kernel code (GPU code)
+	- GPU code is CUDA code
+- ...back to the Host Code...
+	- Copy the data from the device to the host
