@@ -1,1 +1,42 @@
 #OS 
+- **Scheduling** defines which process gets the CPU, and when.
+	- We have multiple processes, but only one CPU, so how much CPU time does each process get?
+	- Possibilities:
+		- Keep CPU 'til done
+		- Each process uses the CPU a bit then passes it on
+		- Each process gets proportional to what they pay
+		- Decisions, decisions... it's a *policy decision*!
+- Some terminology:
+	- Arrival time: time that process is created
+	- Service time: CPU time needed to complete
+	- Turnaround time: from arrival to departure
+		- i.e. process arrives, waits for CPU, then uses (in bursts)
+		- ...and departs after CPU usage equals service time
+		- So we are interested in what order minimizes average turnaround time.
+- We'll look at different types of schedulers.
+	- **Shortest-First** is always better than **Longest-First**.
+	- **First Come, First Served**: Allocate CPU to the proceses in order of their arrival.
+		- It's non-preemptive, simple, no starvation, but is poor for short processes.
+	- **Round Robin**: Time-slice: each process gets a quantum in turn.
+		- This *is* a preemptive algorithm. It's simple though and doesn't starve either.
+			- Because it's preemptive, we need an interrupting clock!
+		- Each process waits at most $(n - 1) * quantum$.
+		- In *general*, RR is better than FCFS (because shortest-first is best!).
+	- **Shortest Process Next**: Select the process in the queue with the shortest service time.
+		- This is optimal (shortest-first) for non-preemptive algorithms, but it allows starvation.
+		- Assumes service times are known.
+	- **Shortest Remaining Time**: It's a preemptive version of SPN. Select the process with the shortest remaining time.
+		- Optimal (shortest-first) for preemptive, but allows starvation.
+		- Assumes service times are known.
+
+### Multi-Level Feedback Queues
+- "Priority queues": 0 (high), ..., *N* (low)
+- New processes enter queue 0
+- Select from the highest priority queue
+- Run for $T=2^k$ quantums, where $k$ is the number of the queue the process came from
+	- Used T: move to next lower queue, FIFO
+	- Used < T: back to the same queue, RR
+		- Due to yield or higher priority arrival
+- Periodically boost (e.g. all to the highest queue)
+- Basically, as we go down, we get less attention but more time.
+- Through this system, the scheduler is trying to learn what the shortest processes are.

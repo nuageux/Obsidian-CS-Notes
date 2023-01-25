@@ -2,8 +2,9 @@
 - Timesharing is the multiplexing use of CPU over time.
 	- There are multiple processes but only a single CPU (in a uniprocessor model).
 	- Conceptually, each process makes progress over time.
-	- In reality, each periodically gets "quantum" (the smallest fixed unit of time allocated) of CPU time.
+	- In reality, each periodically gets a "quantum" (the smallest fixed unit of time allocated) of CPU time.
 	- The illusion of parallel progress is achieved by rapidly switching the CPU.
+		- At least faster than the human reaction time, usually set faster than 100 milliseconds 
 
 ### Implementation
 - The kernel keeps track of progress of each process.
@@ -19,6 +20,7 @@
 	- Sleep: process gives up CPU to wait for an event
 	- Wakeup: event occurred, makes the process ready
 - We don't want one process to run forever and hog all the resources.
+- Logical vs. Physical Execution is about what can be the case and what is the reality.
 
 ### Process vs Kernel
 - The kernel is code that supports processes, such as:
@@ -26,6 +28,7 @@
 	- management, such as context switching, scheduling, etc.
 - The kernel runs when a system call or **hardware interrupt** occurs.
 - The kernel runs as a part of the running process.
+	- **The kernel is an extension of all processes.**
 - The kernel maintains a list of processes in a table.
 	- Has the PID, the process states, the contents of CPU contexts, areas of memory being used, reasons to be blocked, etc. 
 
@@ -65,3 +68,11 @@
 - Thread calls then happen at a user level, and so does the thread management.
 - This way, threads are supported regradless of kernel support. *But*, this isn't "true" parallelism.
 	- This is because if the kernel doesn't know what threads are, it can't schedule different threads on different CPUs.
+- Benefits
+	- Portability: works on any kernel
+	- Efficient: thread-switching occurs in user-space
+	- User can decide on scheduling policy
+	- On a kernel, thread switching requires a kernel call, which has overhead
+- There is an important distinction between user-level and kernel-level threads.
+	- Where is thread abstraction supported is the easy question. It is wherever the thread support code lies.
+	- However, where the thread(s) execute(s) may be different. A user-level thread *may* run in the kernel (because it's an extension of every process)! A kernel-level thread *may* run in user-space!
