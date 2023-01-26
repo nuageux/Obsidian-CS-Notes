@@ -7,3 +7,7 @@
 
 ## Image Blur
 - It is the simplest type of **convolution**.
+- For each pixel, take a window around it and take the weighted average of the color to assign a new color for that pixel.
+	- For a blur, that weight is 1 (no weight).
+	- Those weights are what a neural network learns.
+- 

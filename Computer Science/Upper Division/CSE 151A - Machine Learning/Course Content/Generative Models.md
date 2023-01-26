@@ -14,3 +14,8 @@
 - The **univariate Gaussian**.
 	- ![[Pasted image 20230118160542.png]]
 	- It's the normal bell curve.
+
+## The Multivariate Gaussian
+- We want probability distributions over $d$ dimensions.
+- We simply extend the mean and covariance matrix to cover those $d$ dimensions.
+- Estimate class probabilities, then fit a Gaussian to each class. 
