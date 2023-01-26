@@ -8,6 +8,10 @@
 		- All threads in a grid run the same kernel code.
 		- "Single Program, Multiple Data" (SPMD)
 		- Threads don't execute at the same rate. So we group them in "warps" of 32 in order to force exeuction in lockstep (i.e. all threads will wait for the slowest thread to finish its instruction before they all move on to the next).
+			- Warps are the scheduling units in a streaming multiprocessor.
+			- SM implements zero-overhead warp scheduling. So the warp whose next instruction has its operands ready for consumption are eligible for execution.
+			- The pitfall of warps are control/branch divergence.
+				- GPUs can use predicated execution, where each thread computes a yes/no answer for each path, so multiple paths are executed serially.
 		- Each thread has an index that it uses to compute memory addresses and make control decisions.
 		- The hierarchy is as follows: kernel -> grid -> block -> thread
 			- So to access an index in the device, it is `i = blockIdx.x * blockDim.x + threadIdx.x;`
