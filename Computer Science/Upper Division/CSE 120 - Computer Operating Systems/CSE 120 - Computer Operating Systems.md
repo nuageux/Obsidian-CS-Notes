@@ -11,3 +11,5 @@ Course Description:
 - [[Introduction & Processes]]
 - [[Timesharing]]
 - [[Scheduling]]
+- [[Synchronization]]
+- 

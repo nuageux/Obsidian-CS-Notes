@@ -67,3 +67,46 @@
 	- Select the process with the minimum pass value
 	- Increment pass value by stride value
 - The optimization lies in the face we use integer operations instead of floating point.
+
+## Real Time Scheduling
+- The correctness of a real-time system depends on
+	- the *logical result* of computations
+	- *and* the timing of these results.
+- There are two types of real-time systems
+	- **hard** and **soft** real-time
+		- These adjectives refer to the severity of missing a deadline.
+		- Deadlines refer to the end of a period.
+	- **periodic** and **a-periodic** real-time
+		- Describes whether processes do things cyclically.
+- Each process is given some values:
+	- C = CPU burst = how much CPU time the process *must* get per period
+	- T = period
+	- U = C / T = utilization = how much time spent doing "useful" work
+- Usually, it's impossible to predict whether a program will meet deadlines or not until it is run.
+- However, when constaints are put on the problem, we *can* know.
+
+#### Earliest Deadline First
+- Just schedule the process with the earliest deadline.
+- This *guarantees that all deadlines will be met!*
+- If an earlier deadline process appears, preempt.
+- Works for both periodic and aperiodic time.
+- Achieves 100% utilization(!) (ignoring overhead)
+	- The overhead is what it takes to *find* the earliest deadline.
+	- When we ignore overhead, we need to *bound* the number of processes we are working with to realistically consider EDF.
+- *Expensive!* Requires ordering by deadlines! $O(n)$ (bad)!
+
+#### Rate Monotonic Scheduling
+- Only works for periodic processes.
+- Prioritize based on rates (the reciprocal of the periods (which were given)) of the periodic processes given.
+	- Priorities won't ever change (unlike deadlines)!
+- At the start of any period, select the highest priority.
+- Preempt if necessary. When the burst is done, we put it aside until the next period.
+- If the sum of $n$ utilizations $U_1 + U_2 + ... + U_N\leq n(2^{1/n}-1)$, all deadlines have been met.
+	- If that bound is not met, it doesn't necessarily mean that the problem will fail to meet deadlines, it just means we cannot guarantee what will happen.
+		- i.e. might *happen* to work perfectly. We just didn't know until we ran the program.
+- A *lot* less overhead than EDF.
+- **RMS is Optimal but Limited**.
+	- It's simple and efficient; note the static priority scheduling based on rates.
+	- It's optimal for static priority algorithms; no other static priority algorithm can schedule if RMS can't.
+	- But it's limited in what it guarantees by its bound test. It's also bound to periodic processes.
+			- The bound test is incidentaly always > ln(2) = 69%. We can thus test with 69% instead.

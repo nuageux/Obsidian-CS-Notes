@@ -12,7 +12,5 @@
 	- Those weights are what a neural network learns.
 - Within a convolution, we take advantage of locality, because we reuse pixel memory locations within our calculations.
 
-## Matrix Multiplication
-
 ## Balancing FLOPS and Memory Bandwidth
 

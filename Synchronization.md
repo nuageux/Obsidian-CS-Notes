@@ -1,0 +1,11 @@
+#OS 
+- To synchronize means that events happen at the same time.
+- Process synchronization
+	- Events in processes that occur "at the same time"...
+	- ...in actuality one process waits for another. Otherwise they might overwrite one another.
+	- Think of it as "lockstep" like in parallel computing.
+- Uses?
+	- Prevent race conditions
+		- Identify *critical sections*, i.e. sections of code that are executed by different processes, which must run *atomically (should not be divided), with respect to each other!*
+		- The above (^) enforces mutual exclusion, where only one process is active in a critical section.
+	- Wait for resources to become available.

@@ -11,7 +11,7 @@ Course Description:
 - [[Parallel Computing & CUDA]]
 - [[CUDA Parallel Execution Model]]
 - [[2D Grid Processing]]
-- Generalized Tiling and DRAM Bandwidth
+- [[Generalized Tiling and DRAM Bandwidth]]
 - Optimizing Matrix Multiply
 - Convolution and Constant Cache
 - Convolution and Constant Memory
