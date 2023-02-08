@@ -12,4 +12,3 @@ Course Description:
 - [[Timesharing]]
 - [[Scheduling]]
 - [[Synchronization]]
-- 
