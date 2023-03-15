@@ -12,3 +12,5 @@ Course Description:
 - [[Timesharing]]
 - [[Scheduling]]
 - [[Synchronization]]
+- [[InterProcess Communication]]
+- [[Deadlock]]

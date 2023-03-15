@@ -12,11 +12,7 @@ Course Description:
 - [[CUDA Parallel Execution Model]]
 - [[2D Grid Processing]]
 - [[Generalized Tiling and DRAM Bandwidth]]
-- Optimizing Matrix Multiply
-- Convolution and Constant Cache
-- Convolution and Constant Memory
-- Tiled Convolution
-- Analysis ^
+- [[Convolution]]
 - Machine Learning
 - Classification
 - Training
