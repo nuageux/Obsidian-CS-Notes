@@ -9,4 +9,25 @@ Course Description:
 
 #### Course Content
 [[intro time ]]
-- 
+- Layers & Framing
+- Error Handling
+- Reliable Transmission
+- Transport Layers & Protocols
+- Link Networks
+- Internetworks
+- IP Protocol
+- Internet Addressing
+- Routing, IPv6, ICMP
+- Discovering Addresses
+- Naming, NAT, Routing
+- Link-State Routing
+- Intradomain Routing
+- Interdomain Routing
+- Border Gateway Protocol
+- BGP and Router Design
+- Buffering & Scheduling
+- Congestion Control
+- Links and Signaling
+- Clock Recovery and Modulation
+- Media Access Control
+- Wireless Networking
