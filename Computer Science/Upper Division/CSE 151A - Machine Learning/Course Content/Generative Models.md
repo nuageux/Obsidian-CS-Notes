@@ -12,7 +12,7 @@
 ## Generative Modeling in 1 Dimension
 - Example: Identifying the winery of a bottle of wine.
 - The **univariate Gaussian**.
-	- ![[Pasted image 20230118160542.png]]
+	- ![[Gaussian Equation.png]]
 	- It's the normal bell curve.
 
 ## The Multivariate Gaussian

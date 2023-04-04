@@ -1,5 +1,5 @@
 #Course #CSE
-Prerequisites: [[CSE 100 - Advanced Algorithms & Data Structures]]
+Prerequisites: [[CSE 100 - Algorithms & Data Structures]]
 
 Spring 2022
 Instructor: Prof. Joseph Gibbs Politz

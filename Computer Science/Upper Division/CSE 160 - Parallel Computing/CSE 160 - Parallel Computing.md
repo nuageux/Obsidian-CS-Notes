@@ -1,5 +1,5 @@
 #Course #CSE 
-Prerequisites: [[CSE 100 - Advanced Algorithms & Data Structures]]
+Prerequisites: [[CSE 100 - Algorithms & Data Structures]]
 
 Winter 2023
 Instructor: Prof. Ryan Kastner
