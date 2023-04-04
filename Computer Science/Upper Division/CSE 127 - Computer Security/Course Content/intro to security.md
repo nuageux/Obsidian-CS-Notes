@@ -28,3 +28,6 @@ CIA Properties
 - integrity
 	- 
 - availability
+
+
+Security Mindset
