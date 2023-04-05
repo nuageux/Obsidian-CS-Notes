@@ -7,8 +7,7 @@ Instructor: Prof. Sicun Gao
 Course Description:  
 "Important ideas and algorithms in search & reasoning and how they are used in practical AI applications, including A* search, adversarial search, Monte Carlo tree search, reinforcement learning, constraint solving and optimization, and propositional and first-order reasoning."
 
-**Algorithmic approaches for making intelligent decisions**
-- use github, CLONE, not FORK
+**Algorithmic approaches for making intelligent decisions.**
 
 #### Course Content
 - [[Classical Search]]
