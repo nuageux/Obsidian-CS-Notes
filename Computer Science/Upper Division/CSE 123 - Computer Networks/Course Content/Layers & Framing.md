@@ -37,3 +37,18 @@ tcp / ip protocol stack
 - transport layer (TCP) provides reliable and in order delivery of bytes from one computer to another. other layers dont do that
 - network layer gets a message from one network to another
 - link layer (physical layer), the thing that delivers bits from one computer to another.
+
+layering enabled growth
+- hourglass model, "thin waist"
+	- IP is the thin waist in question
+- lets us change things at another layer and let that layer evolve and grow to match needs of humans
+- but IP stays the same, in fact since like the 60's. we can change every other layer!
+
+layer context encapsulated in packets via headers
+- original message to send! passes thru the code at each layer, each layer adds some bytes to the header.
+- there is some overhead, a cost.
+
+link layer
+- signal encoding to physical signals
+- also decodes back to binary data
+- media access
