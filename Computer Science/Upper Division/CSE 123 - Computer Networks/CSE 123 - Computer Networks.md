@@ -9,8 +9,8 @@ Course Description:
 
 #### Course Content
 [[intro time ]]
-- [[Layers & Framing]]
-- Error Handling
+- [[Layers]]
+- [[Framing & Error Handling]]
 - Reliable Transmission
 - Transport Layers & Protocols
 - Link Networks
