@@ -71,7 +71,3 @@ identifying frames
 						- efficiency is dependent on what the data looks like
 			- can use with the length strategy
 	- fixed duration (seconds) frames
-
-
-# Error Handling
-Error handling is detecting and correcting errors in received frames.
