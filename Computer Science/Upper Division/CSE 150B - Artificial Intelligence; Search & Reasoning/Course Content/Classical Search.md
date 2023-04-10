@@ -22,3 +22,7 @@ DFS BFS review
 - avoid cycles within graphs
 - dfs is complete in finite spaces but not in infinite graphs.
 - bfs is, however
+
+Djikstra
+- know that we have to pick the best version in the frontier
+- puddles are considered infinite cost

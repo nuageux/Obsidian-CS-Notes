@@ -1,0 +1,77 @@
+# Framing
+- Take abig stream of bits, broken up into tiny digestable chunks
+	- provides a manageable unitfor error handling.
+		- just retransmit the chunk instead of the whole message if the relay was messed up
+		- only have to check a small portion, may allow you to figure out if something is broken
+- multiplexing
+- its not required but very common; think about when its needed
+- need to id the beginning and end of a frame.
+	- sounds easy
+		- isnt
+- efficient and scalable?
+
+whats in a frame?
+- header, payload, trailer
+- payload
+	- bits we are actually trying to send from host to host
+	- "content"
+- header
+	- provides context to know what the payload is all about
+	- what is in the header is defined by the protocol
+- trailer
+	- add to end of message to include error detection information
+	- summary of header and payload to check they were received properly.
+		- checksum and CRC are placed there.
+- basic unit of communication
+	- maximum transmissionunit (MTU)
+- some linklayers require absence of frames as well
+	- minimum gaps between frames?
+	- message that nobody is sending a frame so we know that the channel is free
+- most layers don't add a trailer. link layer only
+
+identifying frames
+- delineate frames, indicating where the frame starts and end
+	- fixed length frames (self explanatory)
+		- easy to manage for receiver
+		- but introduces inefficiencies for variable length payloads
+			- bc they need to be fragmented
+			- may waste bandwidth by the added headers to fragments
+			- explicit design tradeoff when making!
+				- this sucks. can't assume at buildtime the tradeoffs
+		- not reliable nor scalable
+		- can lose track what frame we are on, bc bits can be added or lost randomly
+		- even random reordering of bits
+	- explicitly delimited frames
+		- length-based
+			- make frames short or long
+			- start, length, payload. declares how long it is
+			- issue: length field must not be corrupted. decodes WHILE receiving(!)
+				- still have to id the beginning, bc the length doesn't determine that
+		- sentinel-based
+			- variable-length frames
+			- mark the start and end with a marker (like a pattern)
+			- make sure marker doesn't appear in the data
+				- using a special symbol takes out a character we may want to use
+				- Stuffing
+					- dynamically remove marker bit patterns from data stream (header and payload)
+					- receiver "unstuffs" data stream to reconstruct original data
+					- stuffer algorithm will add bits to destroy sentinel patterns
+						- when receiving frame, remove the sentinel. then remove bits that destroyed the sentinel patterns in the datastream
+					- Bit level stuffing?
+						- say sentinel is 01111110
+						- if we see 011111 transmitted, insert another 0 into the message! so we get 011111010
+						- the receiver will remove the next 0 every time five 1s are seen
+						- 01111111 is an impossible pattern. so error checking happens when that pattern is found
+					- byte stuffing
+						- same but at byte level
+						- stx is beginning flag, etx is ending flag
+						- if either of those appears, prefix the byte with DLE (data link escape)
+						- if DLE appears in datastream, stuff that too with DLE.
+						- this can be as bad as 50% efficient.
+						- efficiency is dependent on what the data looks like
+			- can use with the length strategy
+	- fixed duration (seconds) frames
+
+
+# Error Handling
+Error handling is detecting and correcting errors in received frames.

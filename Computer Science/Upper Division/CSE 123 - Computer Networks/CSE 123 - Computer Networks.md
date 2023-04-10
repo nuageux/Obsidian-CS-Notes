@@ -9,9 +9,8 @@ Course Description:
 
 #### Course Content
 [[intro time ]]
-- [[Sliding Window Protocol]] (SWP)
-- [[Layers & Framing]]
-- Error Handling
+- [[Layers]]
+- [[Framing & Error Handling]]
 - Reliable Transmission
 - Transport Layers & Protocols
 - Link Networks
