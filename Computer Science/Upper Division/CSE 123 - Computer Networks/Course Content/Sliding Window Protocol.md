@@ -1,0 +1,40 @@
+- Can serve 3 different roles:
+	- Reliably deliver frames across an unreliable link.
+	- Preserve the order in which frames are transmitted.
+	- Support flow control, a feedback mechanism by which the receiver is able to throttle the sender.
+		- Keeps the sender from transmitting more data than the receiver is able to process.
+- Remember to ask ourselves whether a mechanism is necessary at the current level before incorporating it into the current level's protocol.
+
+- Each frame has a sequence number, **SeqNum**.
+- Sender has 3 variables and maintains that **LFS - LAR <= SWS** (the frames we are working with fit in our window)
+	- send window size, **SWS**
+		- upper bound on # of unacknowledged frames that sender can transmit at once
+		- compute by the **delay x bandwidth product**.
+	- last acknowledgement received, **LAR**
+		- the sequence number of the last acknowledgement received
+		- i.e. we're done worrying about this frame
+		- When ack arrives, LAR is moved to the right, allowing the SWS to "slide" to the right!
+	- last frame sent, **LFS**
+		- the sequence number of the last frame sent
+		- haven't received an acknowledgement at this point in time, presumably
+- Sender associates a timer with each frame it transmits and retransmits upon timeout.
+	- So sender must keep up to SWS frames buffered in case the ack never comes and it must retransmit.
+
+
+- Receiver has 3 variables and maintains that **LAF - LFR <= RWS**
+	- receive window size, **RWS**
+		- upper bound on *out of order* frames that the receiver is willing to accept
+		- can set to whatever.
+	- largest acceptable frame, **LAF**
+		- the sequence number of largest acceptable frame number, i.e. the receiver will refuse frames with a sequence number larger than LAF
+	- last frame received, **LFR**
+		- the sequence number of the last frame received
+		- i.e. we're done worrying about this frame
+- Receiver also has to decide whether or not to send an ACK.
+	- **SeqNumToAck** denotes the largest sequence number *not yet acknowledged*.
+		- i.e. all frames with sequence numbers less than or equal to SeqNumToAck have been received.
+		- So when all the frames w seq # <= SeqNumToAck arrive, we can finally acknowledge SeqNumToAck.
+	- The ACK to be sent corresponds to SeqNumToAck, even if higher numbered packets have been received.
+		- After sending that ACK, the receiver will set **LFR = SeqNumToAck** and adjusts **LAF = LFR + RWS**.
+			- i.e. we can now accept a higher sequence number frame, since we have "slid" our window!
+- 
