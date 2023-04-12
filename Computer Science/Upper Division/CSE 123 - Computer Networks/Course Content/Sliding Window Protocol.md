@@ -12,11 +12,12 @@
 		- compute by the **delay x bandwidth product**.
 	- last acknowledgement received, **LAR**
 		- the sequence number of the last acknowledgement received
+			- this implies that all frames before have been received *in order*
 		- i.e. we're done worrying about this frame
 		- When ack arrives, LAR is moved to the right, allowing the SWS to "slide" to the right!
 	- last frame sent, **LFS**
 		- the sequence number of the last frame sent
-		- haven't received an acknowledgement at this point in time, presumably
+		- have received an acknowledgement at this point in time for this frame, presumably
 - Sender associates a timer with each frame it transmits and retransmits upon timeout.
 	- So sender must keep up to SWS frames buffered in case the ack never comes and it must retransmit.
 
@@ -24,7 +25,7 @@
 - Receiver has 3 variables and maintains that **LAF - LFR <= RWS**
 	- receive window size, **RWS**
 		- upper bound on *out of order* frames that the receiver is willing to accept
-		- can set to whatever.
+		- can set to whatever, but only makes sense to make it <= SWS, since the sender won't be sending more than SWS anyways.
 	- largest acceptable frame, **LAF**
 		- the sequence number of largest acceptable frame number, i.e. the receiver will refuse frames with a sequence number larger than LAF
 	- last frame received, **LFR**

@@ -58,3 +58,24 @@ reliable transmission
 		- don't need to remember all packets ever sent
 - Window "moves forward" upon receipt of *new* ACK
 - Window "goes back" to beginning upon a timeout
+- Use repeated ACKs to notice that frames must be retransmitted BEFORE the timeout (which kills efficiency, inherent to waiting)
+- ACKs give a hint about RTT
+- can be proactive if we get these hints:
+	- negative ACKs
+	- Fast retransmit (retransmit right away)
+		- incidentally, modern TCP does this if 3 repeated ACKs
+
+## Host-based Congestion Control
+- one of biggest unsolved problems in CS
+- how fast should a host send data? don't cause congestion
+	- shouldn't be faster than the sender's share of bandwidth
+	- shouldn't be faster than the network can process
+- related to bandwidth allocation
+
+Congestion occurs at routers
+- have some memory in the router to absorb bursts  of packets into a buffer
+- but if sending rate is persistently is > drain rate, the queue builds up
+	- i.e. buffers only help *temporary* input rate > output rates.
+	- buffers inherently increase latency! the lesson is that buffers aren't for free.
+		- "drop-tail queuing problem": increasing network load increases throughput until a bottleneck, then exponentially increases latency, then there is loss due to congestion leading to a congestion collapse(!!)
+- dropped packets represent wasted work; goodput < throughput
