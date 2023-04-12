@@ -8,7 +8,7 @@ Course Description:
 
 #### Course Content
 - [[GitHub]]
-- Data
+- [[Data]]
 - Ethics
 - Data
 - Inference
