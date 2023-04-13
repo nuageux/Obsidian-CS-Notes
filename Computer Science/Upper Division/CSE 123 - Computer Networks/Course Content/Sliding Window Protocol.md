@@ -17,7 +17,7 @@
 		- When ack arrives, LAR is moved to the right, allowing the SWS to "slide" to the right!
 	- last frame sent, **LFS**
 		- the sequence number of the last frame sent
-		- have received an acknowledgement at this point in time for this frame, presumably
+		- haven't received an acknowledgement at this point in time for this frame, presumably
 - Sender associates a timer with each frame it transmits and retransmits upon timeout.
 	- So sender must keep up to SWS frames buffered in case the ack never comes and it must retransmit.
 
