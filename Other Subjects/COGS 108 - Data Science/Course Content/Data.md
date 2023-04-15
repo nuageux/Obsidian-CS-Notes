@@ -25,3 +25,15 @@ Tidy Data
 - if multiple tables, must have a primary key to relate them
 - NOT the same as **clean** data.
 	- "clean data" refers to correctly marking data, like accidentally swapping day and month formats in the same date column.
+
+# Data Intuition
+- Fermi Estimation
+- "Wisdom of the Crowds"
+	- The average person's guess is usually true, given independence of the collected responses.
+	- Diversity of opinion
+	- Decentralization: people are able to specialize and draw on local knowledge
+	- Aggregation: some mechanism exists for turning private judgments into a collective decision
+- Covering Python's pandas package (panel data... i guess...)
+	- DataFrame objects
+		- each column of which contains a pandas Series object
+- 

@@ -12,8 +12,6 @@ Course Description:
 - [[Layers]]
 - [[Framing]]
 - [[Transport Layer]]
-- Reliable Transmission
-- Transport Layers & Protocols
 - Link Networks
 - Internetworks
 - IP Protocol
