@@ -9,8 +9,8 @@ Course Description:
 #### Course Content
 - [[GitHub]]
 - [[Data]]
-- Ethics
-- Data
+- [[Ethics]]
+- [[Questions]]
 - Inference
 - Test
 - ML

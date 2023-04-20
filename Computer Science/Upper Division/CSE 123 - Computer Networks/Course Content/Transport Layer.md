@@ -197,3 +197,74 @@ fast recovery
 - if a packet has made it through, we can send another one
 - divide cwnd by 2 after a fast retransmit
 - incremend cwnd by 1 MSS for each additional duplicate ACK
+
+# TCP
+- defines and provides delivery semantics
+- to which end point, when, how, and if
+- multiplexes different processes between the same hosts
+- and reliability if the app needs it
+
+naming processes/services
+- process is abstract term for web browser (http), email servers (smtp), hostname translation (DNS)
+- how do we identify for remote commuication?
+	- proc id or mem address are os-specific and transient...
+- so TCP and UDP use "ports"
+	- 16-bit integers representing mailboxes that processes "rent out"
+	- identify process uniquely as (ip address, protocol, port)
+
+picking port numbers
+- what port should a web server use on host X?
+- to what port should you send to contact that Web server?
+	- Well-known port numbers. ex: 911 is a well-known phone line for emergencies.
+	- http is 80, smtp is 25, dns is 53, etc.
+	- ports below 1024 are traditionally reserved for well-known services
+- clients use os-assigned temporary "ephemeral" ports
+	- i.e. above 1024, recycled by OS when the client finishes
+
+### UDP
+- User datagram protocol
+- provides *unreliable* message delivery between processes (only application layer multiplexing)
+	- source port filled in by OS as message is sent
+	- destination port identifies UDP delivery queue at endpoint
+- connectionless (no state about who talks to whom)
+- UDP checksum is included as optional protection against errors
+	- intended as an end-to-end check on delivery
+	- so it covers data, udp header, and IP *pseudoheader* (history)
+- is used for streaming media, dns, ntp, fps
+
+## TCP
+- reliable bi-directional bytestream between processes
+- uses a sliding window protocol!
+- connection-oriented
+	- conversation between two endpoints with beginning and end
+- flow control at receiver window
+- congestion control at sender window
+
+tcp header format
+- its a lot...
+- srcPort, dstPort, SeqNum, AckNum, HdrLen, Flags, AdvertisedWindow, Checksum, UrgPtr, Options, Data
+
+connection establishment
+- both sender and reciever must be ready before we start to transfer data
+	- sender and receiver need to agree on a set of parameters ("negotiate")
+	- seqnum space in each direction
+- "handshake protocols": setup state between two oblivious endpoints
+	- need to deal with delayed and reordered packets in the handshake itself!
+
+comments
+- changing initial seqnums (ISNs) minimizes the chance of hosts that crashes getting confused by a previous incarnation of a connection
+	- also good for security
+- how to choose ISNs?
+	- maximize period between reuse
+	- minimize ability to guess
+
+connection teardown
+- orderly release by sender and receiver when done
+	- delivers all pending data and "hangs up"
+- cleans up state in sender and receiver
+- tcp provides a "symmetric"close
+	- both sides shutdown independently because you don't know when the other side will be done!
+
+time_wait state
+- we wait 2\*MSL (maximum segment lifetime) before completing the close
+	- MSL usually is 60 seconds(!)

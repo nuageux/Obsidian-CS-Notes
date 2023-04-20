@@ -12,7 +12,7 @@ Course Description:
 - [[Layers]]
 - [[Framing]]
 - [[Transport Layer]]
-- Link Networks
+- [[Link Networks]]
 - Internetworks
 - IP Protocol
 - Internet Addressing
