@@ -1,13 +1,13 @@
-#Course #Economics #Game-Theory #Supplementary
+#Course #Economics #Supplementary
 Prerequisites: [[CSE 20 - Discrete Mathematics]], [[MATH 20C - Calculus & Analytic Geometry]]
 
 Winter 2020
 Instructor: Prof. Joel Watson
 
-Course Description: 
+#### Course Description: 
 "Introduction to game theory. Analysis of people’s decisions when the consequences of the decisions depend on what other people do. This course features applications in economics, political science, and law."
 
-#### Course Content
+## Course Content
 Ch 1: [[Strategic Settings and the Definition of Game Theory]]
 Ch 2, 3: [[The Extensive Form and the Normal (Strategic) Form]]
 Ch 4: [[Beliefs, Mixed Strategies, and Expected Payoffs]]

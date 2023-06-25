@@ -44,7 +44,6 @@ So, when is the Grim-trigger strategy a SPNE for both players?
 	1. Typically, the player who set off the trigger will have a payoff of (deviation payoff) + (payoff of Grim-trigger SPNE) where the second part of the sum is usually $\frac{D\delta}{1-\delta}$ where $D$ is the payoff of the Grim-trigger SPNE.
 3. Set up an inequality and solve for $\delta$.
 
-
 # Folk Theorem for Repeated Game Theory
 A collection of mathematical results that indicate that in a repeated game, if players are very patient, there will be many SPNE that cover a wide range of possible payoffs.
 - i.e. there are much more scenarios where players can rationally play unexpected (appears irrational) strategies.

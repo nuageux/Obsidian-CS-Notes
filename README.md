@@ -1,4 +1,4 @@
-An amalgamation of my course knowledge from my [Andrew Uhm]'s undergraduate years at UCSD (2020-2023).
+An amalgamation of my course knowledge from my undergraduate years at UCSD (2020-2023).
 
 Here are the tags currently being used:
 - Practical
@@ -9,35 +9,43 @@ Here are the tags currently being used:
 - Supplementary
 
 - Business
-- Cogsci
+- CogSci
 - CSE
+- DataSci
 - Economics
+- Life
 - Math
-- Physics
 
-- Data-Science
+- AI
 - Database
 - Design
 - Game-Theory
 - Machine-Learning
 - Management
 - History
+- Security
 
 - Algorithm
-- Computer Architecture
+- Computer-Architecture (Systems)
 - Data-Structure
 - Graphics
-- Model
 - Project
 - Proof
+- Theory (Model)
 
 - Assembly
 - ARM
-- C-plus-plus
+- Bash
+- C
+- CPP
+- CUDA
 - CSS
+- Git
 - HTML
+- Java
 - JavaScript
 - OpenGL
 - Python
 - SQL
 - x86
+- Verilog

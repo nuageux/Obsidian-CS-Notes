@@ -3,7 +3,7 @@
 Winter 2021
 Instructor: Prof. Steve Barrera
 
-Course Description: 
+#### Course Description: 
 "A team-taught course highlighting development of the field and the broad range of topics covered in the major, including addiction, analogy, animal cognition, human-computer interaction, language, neuroimaging, neural networks, reasoning, robots, and real-world applications."
 
 ### About Cognitive Science
@@ -11,7 +11,7 @@ Course Description:
 Course Context: [[A Brief History of Cognitive Science]]
 Course Context: [[Marr's Levels of Analysis]]
 
-### Guest Lectures
+## Guest Lectures
 <!-- Week 2 -->
 - Dr. Seana Coulson: [[Lateralization of Function]]
 - Dr. Benjamin Bergen: [[Swearing, Language, and the Brain]]

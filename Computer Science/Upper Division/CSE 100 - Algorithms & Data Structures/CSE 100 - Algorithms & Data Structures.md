@@ -1,19 +1,19 @@
-#Course #CSE
+#Course #CSE #CPP
 Prerequisites: [[CSE 12 - Data Structures and Object-Oriented Design]], [[CSE 15L - Software Tools and Techniques]], [[CSE 21 - Mathematics for Algorithms and Systems]], [[CSE 30 - Computer Organization & Systems Programming]]
 
 Winter 2022
 Instructor: Prof. Niema Moshiri
 
-Course Description: 
-"High-performance data structures nad supporting algorithms. Use and inplementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also, memory management, pointers, recursion. Theoretical and practical performance analysis, both average case and amortized. Uses C++ and STL."
+#### Course Description: 
+"High-performance data structures and supporting algorithms. Use and implementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also, memory management, pointers, recursion. Theoretical and practical performance analysis, both average case and amortized. Uses C++ and its Standard Template Library."
 
-Course Goals:
+##### Course Goals:
 To be able to:
 - **Analyze** data structures for both *time* and *space* complexity.
 - **Describe** the *strengths* and *weaknesses* of a data structure.
 - **Implement** complex data structures correctly and efficiently.
 
-### Course Content
+## Course Content
 - [[Data Structures vs. Abstract Data Types]]
 - [[C++ Review]]
 - [[C++ Iterators]]

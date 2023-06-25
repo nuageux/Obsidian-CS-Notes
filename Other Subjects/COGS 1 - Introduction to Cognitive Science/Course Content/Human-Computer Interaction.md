@@ -1,10 +1,11 @@
 #CogSci 
 Presented by Dr. Jim Hollan
-# Human-Computer Interaction
+
 ### Thinking with Computers
 - Thinking happens [[Distributed Cognition & Cognitive Ethnography#^7bee72|in the world]] as well as in the head.
 	- It is a distributed situated social activity.
 	- Today, we increasingly think with computers.
+
 ## Computers are Special
 Specifically, computers provide a new kind of "stuff" out of which we can fashion dynamic, interactive systems to assist thought, communication, collaboration, and social interaction.
 - Computation provides the most plastic medium for representation, interaction, and communication we have ever known.
@@ -33,11 +34,12 @@ The boundary between physical and digital worlds is becoming permeable.
 # Data Revolution
 We are now in a world of sensors that collect an intense amount of potentially new and myriad data very inexpensively.
 - Extending data collection into situations that have not typically been accessible
-- Enablind examination of the fine detail of action captured in meaningful settings
+- Enabling examination of the fine detail of action captured in meaningful settings
 - Importantly, the scale with which we can examine things is on a much wider spectrum now.
 
 Example: The medical computer interfaces can be much improved.
 - You might recognize the situation where you are undergoing a physical examination and your doctor must click an unnecessary amount of times through an outdated interface to get to the information necessary.
+
 #### Activity-Enriched Computing
 A good way to capture activity is to record video.
 

@@ -1,12 +1,13 @@
+#DataSci 
 - Some people worry about privacy
 - Data is a form of power, and it can be considered as money
-- Ethics are moral principles that govern a person's behaviour or the conducting of an activity
+- Ethics are moral principles that govern a person's behavior or the conducting of an activity
 
 Prof Fleischer's view: Data sci pursued in a manner so that is equitable, with respect for privacy and consent, so as to ensure that it does not cause undue harm.
 
 Intent and Objectivity
 - intent is not required for harmful practices to occur
-- data, algo, and analysis are not objective
+- data, algorithms, and analysis are not objective
 	- it is collected and implemented by people, who have biases
 - bias & discrimination driven by data & algorithms can give new scale to pre-existing inequities
 
@@ -22,7 +23,7 @@ Intent and Objectivity
 - have you considered potential unintended consequences?
 ### Data
 - is there data available? is this data directly related to your question or only potentially through proxies?
-- who do you have data fram?
+- who do you have data from?
 - do you have enough data to make reliable inferences?
 - what biases do the data have?
 - might have to stop if conditions fail...
@@ -32,7 +33,7 @@ Intent and Objectivity
 ### Privacy
 - can you guarantee privacy?
 - what is the level of risk of your data? are all subjects equally vulnerable?
-- anonymization: process of removing personally identifiable infromation from datasets (PII)
+- anonymization: process of removing personally identifiable information from datasets (PII)
 - secure data storage, with appropriate access rights
 ### Evaluation
 - is there a metric of success?

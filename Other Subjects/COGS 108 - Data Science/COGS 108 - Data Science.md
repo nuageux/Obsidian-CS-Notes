@@ -1,19 +1,20 @@
-#CogSci #Data-Science  #Course #Supplementary
+#CogSci #DataSci #Course #Supplementary
+Prerequisites: [[CSE 11 - Programming and Computational Problem-Solving]]
 
 Spring 2023
 Instructor: Dr. Jason Fleischer
 
-Course Description: 
+#### Course Description: 
 "Computer science, statistics, cognitive science and psychology, data visualization, artificial intelligence, machine learning, etc. Critical skills needed to pursue a data science career using hands-on programming and experimental challenges."
 
-#### Course Content
+## Course Content
 - [[GitHub]]
 - [[Data]]
-- [[Ethics]]
-- [[Questions]]
+- [[Data Ethics]]
+- Questions
 - Inference
 - Test
-- ML
-- Nonparametric
+- Machine Learning
+- Non-parametric
 - Geospatial
 - How to be Wrong

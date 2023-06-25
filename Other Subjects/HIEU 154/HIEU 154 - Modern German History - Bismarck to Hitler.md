@@ -3,10 +3,8 @@
 Fall 2022
 Instructor: Prof. Frank Beiss
 
-Course Description:
+#### Course Description:
 "An analysis of the volatile course of German history from unification to the collapse of the Nazi dictatorship. Focus is on domestic developments inside Germany as well as on their impact on European and global politics in the twentieth century."
-
-
 
 ## Course Content
 <!-- Week 1 -->

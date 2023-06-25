@@ -1,6 +1,6 @@
 #CogSci 
 Presented by Dr. Virginia de Sa
-# Learning to See
+
 ## The Vision Problem
 It is *incredibly* difficult to program a computer to have vision, even just vision that is as good as a two-year-old!
 

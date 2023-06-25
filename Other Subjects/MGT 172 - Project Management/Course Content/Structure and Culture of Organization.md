@@ -2,7 +2,7 @@
 ### Purpose
 - Identify, document, and assign project roles, responsibilities, and reporting relationships
 - Ensure that the project organization structure is compatible with the work to be performed
-- Link to communications planning - impacts project communications requirements
+- Link to communications planning -- impacts project communications requirements
 
 ### Challenges
 - The uniqueness and short duration of projects relative to ongoing longer-term organizational activities creates resource challenges.

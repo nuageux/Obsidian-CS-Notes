@@ -1,7 +1,6 @@
 #CogSci 
 Presented by Dr. Gary Cottrell
 
-# How does the Brain Make the Mind?
 #### Intro
 The brain is made up of $10^{11}$ to $10^{12}$ neurons which make up about $10^{14}$ to $10^{15}$ connections, and all these neurons do is send and receive simple electrical symbols. So how does it make a mind?
 - We can try to take measurements:
@@ -22,7 +21,6 @@ The brain is made up of $10^{11}$ to $10^{12}$ neurons which make up about $10^{
 ### What is a "Working Model"?
 These models won't replace what they simulate (yet), but they can still work and do useful things.
 - Ex: AI's can do stuff like facial or language recognition, even if not as well as a human.
-
 
 ## Motivation
 People are still "smarter" than machines, not because we have faster hardware or better software, but because of our **brains**, which are parallel machines capable of operating on a *massive* scale.

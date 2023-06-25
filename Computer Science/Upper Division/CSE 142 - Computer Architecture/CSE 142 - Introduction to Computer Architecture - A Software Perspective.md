@@ -1,13 +1,13 @@
-#Course #CSE 
+#Course #CSE #CPP #Computer-Architecture #x86
 Prerequisites: [[CSE 30 - Computer Organization & Systems Programming]], [[CSE 100 - Algorithms & Data Structures]]
 
 Fall 2022
 Instructor: Prof. Leo Porter & Prof. Steven Swanson
 
-Course Description:  
+#### Course Description:  
 "The operation, structure, and programming interfaces of modern CPUs with an emphasis on exploiting processor features to improve software performance and efficiency. Includes performance, energy, x86 assembly, compiler optimizations, pipelining, instruction-level parallelism, caches, memory-level parallelism, multi-threading, multi-core processors, and SIMD."
 
-### Course Content
+## Course Content
 - [[Measuring Performance]]
 - [[x86 Assembly]]
 - [[The Compiler]]

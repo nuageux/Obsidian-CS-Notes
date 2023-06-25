@@ -1,13 +1,13 @@
-#Course #CSE 
+#Course #CSE #Database #SQL #Theoretical 
 Prerequisites: [[CSE 100 - Algorithms & Data Structures]]
 
 Fall 2022
 Instructor: Prof. Alin Deustch
 
-Course Description:  
+#### Course Description:  
 "Basic concepts of databases, including data modeling, relational databases, query languages, optimization, dependencies, schema design, and concurrency control. Exposure to one or several commercial database systems. Advanced topics such as deductive and object-oriented databases."
 
-#### Course Content
+## Course Content
 - [[Database Management Systems]]
 - [[The Relational Data Model]]
 - [[SQL]] <!-- incomplete -->

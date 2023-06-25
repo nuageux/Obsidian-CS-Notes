@@ -1,5 +1,6 @@
 #CogSci #Data-Science
 Presented by Dr. Brad Voytek
+
 # What is Data Science?
 The **essence** of data science is how *observing*, *quantifying*, and *fitting equations* to **numbers** can teach us the *fundamental laws of the universe*.
 - "By 

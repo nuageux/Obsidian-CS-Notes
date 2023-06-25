@@ -4,7 +4,7 @@ Is the process of assessing "what we are" and deciding and implementing "what we
 - Implemented through projects, and every project should be clearly related to the organization's strategy.
 - Provides the theme and focus on the future direction of the organization.
 	- Responding to changes in the (external) environment
-	- Allocating scarce resources of the firm to improve its competititve position (internal)
+	- Allocating scarce resources of the firm to improve its competitive position (internal)
 
 #### Driving Forces
 - Global Competition: How to stay alive as a company as the field expands.
@@ -12,7 +12,7 @@ Is the process of assessing "what we are" and deciding and implementing "what we
 - Industry Consolidation: Less and less companies are entering certain industries.
 - Accountability: If our company has lost credibility, how do we gain back our customers' trust? How do we establish a certain ethos?
 
-#### Four Activites of the SMP
+#### Four Activities of the SMP
 1. Review and define the organizational mission
 2. Set long-range goals and objectives
 3. Analyze and formulate strategies to reach objectives

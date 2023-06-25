@@ -1,6 +1,5 @@
 #Economics #Game-Theory
 ## The Ultimatum-Offer Bargaining Game
-
 ^db40ba
 
 The game where the first player offers $m$ to the second player.
@@ -14,6 +13,7 @@ Note that in the proper subgames,
 For clarity's sake, we assume that the second player will accept in the indifference case. 
 
 This means that the first player has a lot of negotiating power and should always take the lion’s share, since the second player will always accept.
+
 ## The Basics of Discounting
 How should we account for "discounting" across discrete periods of time?
 - Typically, people are impatient with regard to gains (and opposite with regard to losses).
@@ -22,10 +22,11 @@ How should we account for "discounting" across discrete periods of time?
 - The discount factor is the ratio derived from the values of x and y that we are indifferent between.
 	- $\delta=x/y$. Multiplying $y$ by $\delta$ will give you $x$ (showing how you are indifferent between the two values).
 		- So if you anticipate receiving $y$ in period $t+1$, it’s the same as receiving $\delta y$ in period $t$.
-	- Note that if there are more than 1 period of time separating the balues, $\delta$ is compounded exponentially.
+	- Note that if there are more than 1 period of time separating the values, $\delta$ is compounded exponentially.
 
 If we receive $x$ in each period (forever), our sum is,
 - with clever factoring, $v= \frac{x}{1-\delta}$.
+
 ## Finite-Period Alternating-Offer Bargaining Games
 This is where players play the ultimatum-offer game, back-to-back, where each offer is separated by one unit of time period.
 
@@ -44,6 +45,7 @@ To find the continuation value of a certain period, create a table for both play
 Note that patience yields a player a higher payoff.
 
 Note also that the equilibirum is efficient.
+
 ## Infinite-Horizon Alternating-Offer Bargaining Game
 $T$ is now infinite. How does the game analysis change?
 
