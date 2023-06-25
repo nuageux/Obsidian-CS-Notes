@@ -1,5 +1,4 @@
 #Algorithm 
-# Dijkstra's Algorithm
 When looking at a weighted graph (where there are values on the edges), Dijkstra's Algorithm is as follows:
 0. Set all nodes' distances to $\infty$ and the start node's to 0.
 1. Add (0, start) to the priority queue.

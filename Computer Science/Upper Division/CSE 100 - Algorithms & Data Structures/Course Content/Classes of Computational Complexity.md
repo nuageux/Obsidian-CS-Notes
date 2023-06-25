@@ -1,5 +1,4 @@
 #Theoretical 
-# Complexity of Computational Problems
 What if we wanted to describe the (time/space) complexity of a **problem**, irregardless of the algorithms we may or may not use as a solution?
 
 # Classes of Computational Complexity

@@ -1,47 +1,45 @@
 #Data-Structure 
-# Treaps, Randomized Search Trees (RST), and AVL Trees
-
 ## Treaps
 
--   Tree + Heap
--   Stores `(key, priority)` pairs.
+- Tree + Heap
+- Stores `(key, priority)` pairs.
 
-1.  **BST** properties apply to keys.
+1. **BST** properties apply to keys.
     
-2.  **Heap** properties apply to priorities (top priorities are at the top).
+2. **Heap** properties apply to priorities (top priorities are at the top).
     
 
 ## AVL Rotations
 
--   Think of it as scales shifting.
--   In either type of rotation, the leftmost and rightmost subtrees remain unchanged.
--   In a **left** rotation, the inner subtree (the **left** child of the **right** child of the pivot node [**L-R-L**]) becomes the **right** child of the original pivot node.
+- Think of it as scales shifting.
+- In either type of rotation, the leftmost and rightmost subtrees remain unchanged.
+- In a **left** rotation, the inner subtree (the **left** child of the **right** child of the pivot node [**L-R-L**]) becomes the **right** child of the original pivot node.
 
 ## Treap Insertion
 
-1.  Insert via BST insert algorithm with respect to keys.
+1. Insert via BST insert algorithm with respect to keys.
     
-2.  Use AVL Rotations to “bubble up” to fix the heap with respect to priorities.
+2. Use AVL Rotations to “bubble up” to fix the heap with respect to priorities.
     
 
 ## Randomized Search Trees (RSTs)
 
--   The average-case time complexity for BSTs (the most efficient time complexity of O(log(n)) ) requires that all queries are equally likely to be searched for and that all insertion orders were equally likely.
-    -   This isn’t realistic.
-    -   RSTs try to alleviate the randomness conditions required for the average-case.
+- The average-case time complexity for BSTs (the most efficient time complexity of O(log(n)) ) requires that all queries are equally likely to be searched for and that all insertion orders were equally likely.
+    - This isn’t realistic.
+    - RSTs try to alleviate the randomness conditions required for the average-case.
 
-1.  Use elements as keys.
+1. Use elements as keys.
     
-2.  Randomly generate priorities.
+2. Randomly generate priorities.
     
 
--   Results in pretty balanced trees.
--   Still O(n) worst case, though. Just more unlikely.
+- Results in pretty balanced trees.
+- Still O(n) worst case, though. Just more unlikely.
 
 ## AVL Trees
 
--   **Balance Factor**: [height of right subtree] - [height of left subtree]
--   **AVL Tree**: BST in which every node has a balance factor of -1, 0, or 1
+- **Balance Factor**: [height of right subtree] - [height of left subtree]
+- **AVL Tree**: BST in which every node has a balance factor of -1, 0, or 1
 
 Basically forces a balanced tree, which makes the worst case O(log(n)), what we’ve wanted all along.
 
@@ -75,12 +73,12 @@ Therefore, $h$ is $O(logN_h)$.
 
 ## AVL Tree Insertion
 
-1.  Regular BST insertion
+1. Regular BST insertion
     
-2.  Update the Balance Factors
+2. Update the Balance Factors
     
-3.  Fix broken Balance Factors using AVL rotation
+3. Fix broken Balance Factors using AVL rotation
     
 
--   If we encounter a “kink” (alternating left-right or right-left subtrees) we have to use **two** AVL rotations, starting from the lower subtree.
-    -   When looking for “kinks”, note the heavier child then the heavier **grandchild**. If they’re the same direction, one rotation. Otherwise two.
+- If we encounter a “kink” (alternating left-right or right-left subtrees) we have to use **two** AVL rotations, starting from the lower subtree.
+    - When looking for “kinks”, note the heavier child then the heavier **grandchild**. If they’re the same direction, one rotation. Otherwise two.

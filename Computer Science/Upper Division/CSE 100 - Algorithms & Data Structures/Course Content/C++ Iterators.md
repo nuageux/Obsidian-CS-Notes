@@ -1,6 +1,4 @@
 #C-plus-plus 
-# C++ Iterators
-
 ## Motivation for Iterators
 
 ```cpp
@@ -9,7 +7,7 @@ for (string name : names) {
 }
 ```
 
--   What kind of data structure is `names`? It doesn’t matter! Iterators make this possible.
+- What kind of data structure is `names`? It doesn’t matter! Iterators make this possible.
 
 ## Iterating Over Arrays
 
@@ -22,8 +20,8 @@ void print_inorder(int * p, int size) {
 }
 ```
 
--   Dereferenced pointer, used data, then incremented pointer.
--   Works because the array is a contiguous structure (memory locations are back to back).
+- Dereferenced pointer, used data, then incremented pointer.
+- Works because the array is a contiguous structure (memory locations are back to back).
 
 ## Using Iterators
 
@@ -40,19 +38,19 @@ while (itr != end) {    // the != is overloaded for the iterator class.
 }
 ```
 
--   Linked List example, with lots of overloading
+- Linked List example, with lots of overloading
 
 ## Creating an Iterator Class
 
--   We should be implementing Iterator classes within our data structures.
+- We should be implementing Iterator classes within our data structures.
 
 We must:
 
--   Overload some operators in the Iterator class
-    -   `==`, should be true if the iterators are pointing to the same item.
-    -   `!=`, opposite of above
-    -   `*` (dereference) return a reference to the current data value
-    -   `++` (pre-increment) and `++` (post-increment) should move our iterator to the next item
--   Implement some functions in the Data Structure class
-    -   `begin()`, which returns an iterator to the first element
-    -   `end()`, which returns an iterator to _**just after**_ the last element.
+- Overload some operators in the Iterator class
+    - `==`, should be true if the iterators are pointing to the same item.
+    - `!=`, opposite of above
+    - `*` (dereference) return a reference to the current data value
+    - `++` (pre-increment) and `++` (post-increment) should move our iterator to the next item
+- Implement some functions in the Data Structure class
+    - `begin()`, which returns an iterator to the first element
+    - `end()`, which returns an iterator to _**just after**_ the last element.

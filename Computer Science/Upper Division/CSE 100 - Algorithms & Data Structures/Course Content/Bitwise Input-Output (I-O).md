@@ -15,6 +15,7 @@ The smallest unit in a computer is a byte. How can we work around this to use bi
  
 Again, reading is similar. We read the conventional 4 kilobytes from disk, send to bytewise buffer, to input stream, to bitwise buffer from where we read 1 bit at a time.
 - When the bytewise buffer is empty, read from disk again.
+
 # Reading from a Bitwise Buffer
 How to read the byte in the bitwise buffer from left (most significant bit) to right (least significant bit):
 - Have a "current" value to track the index (starting from 0).

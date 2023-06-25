@@ -42,7 +42,7 @@ A square 2-D array which has rows and columns corresponding to the nodes in our 
 ^c8fe3b
 
 For each node in the graph, we make a list structure to keep track of all of the outgoing edges.
-- Note that lookup has linear speed, but the space complexity is more managable (linear in terms of nodes and edges). This makes it good for sparse graphs.
+- Note that lookup has linear speed, but the space complexity is more manageable (linear in terms of nodes and edges). This makes it good for sparse graphs.
 - Also note that we can tell how many outgoing edges a node has faster with a list.
 # Breadth First Search (BFS)
 
