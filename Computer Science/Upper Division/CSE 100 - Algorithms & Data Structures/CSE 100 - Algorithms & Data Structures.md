@@ -5,7 +5,7 @@ Winter 2022
 Instructor: Prof. Niema Moshiri
 
 #### Course Description: 
-"High-performance data structures and supporting algorithms. Use and implementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also, memory management, pointers, recursion. Theoretical and practical performance analysis, both average case and amortized. Uses C++ and its Standard Template Library."
+"High-performance [[Data Structures vs. Abstract Data Types#^7728a3|data structures]] and supporting [[Algorithms|algorithms]]. Use and implementation of data structures like (un)balanced [[Trees|trees]], [[Graphs and Graph Traversal#^4382bb|graphs]], priority queues, and [[Hashing, Hash Tables, Hash Maps, and Collisions|hash tables]]. Also, [[C++ Review#^f08dc9|memory management]], [[C++ Review#^ba343a|pointers]], recursion. Theoretical and practical [[Time and Space Complexity|performance analysis]], both average case and amortized. Uses [[C++ Review|C++]] and its Standard Template Library."
 
 ##### Course Goals:
 To be able to:

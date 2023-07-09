@@ -1,5 +1,8 @@
 #Algorithm #Data-Structure 
 # Graphs
+
+^4382bb
+
 **Graphs** are collections of **nodes** and **edges**.
 - **Nodes (a.k.a. Vertices)** are single entities.
 - **Edges** are relationships between a pair of nodes.

@@ -1,32 +1,32 @@
-#C-plus-plus
+#CPP 
 ## C++ Data Types
 
 - Can be signed or unsigned
 - 5 Integer types
-    - char [1 byte]
-    - short [2 bytes]
-    - int [4 bytes]
-    - long [8 bytes]
-    - long long [16 bytes]
+    - `char` [1 byte]
+    - `short` [2 bytes]
+    - `int` [4 bytes]
+    - `long` [8 bytes]
+    - `long long` [16 bytes]
 - 3 Floating Point types
-    - float [4 bytes]
-    - double [8 bytes]
-    - long double [16 bytes]
+    - `float` [4 bytes]
+    - `double` [8 bytes]
+    - `long double` [16 bytes]
 - 1 Boolean type
-    - bool [1 byte]
+    - `bool` [1 byte]
 - The byte sizes listed are **not** guaranteed! They are _usually_ those sizes.
 
 ### `string` type in C++
 
 - Is mutable! (as opposed to Java)
 - We can only concatenate other strings, though (unlike Java)
-    - Gotta convert other things into strings or use a “stringstream”.
-- The substring method is different, too.
+    - Must convert other things into strings or use a “stringstream”.
+- The substring method is different from Java as well:
     - `s.substr(beginIndex, lengthOfSubstring)`
 
 ### Comparing Objects in C++
 
-- We can use the relational operators `==`, `<`, etc. to compare objects!
+- We can use the relational operators `==`, `<`, etc. to compare objects.
     - This is because unlike Java, the operators are overloaded.
 
 ## C++ Variables
@@ -38,7 +38,7 @@
     - We must typecast (valid) values ourselves.
 - We can declare variables outside of a class.
     - These are **global variables**. Anything in the file can access it.
-    - Is poor practice.
+    - Is usually poor practice.
 
 ## C++ Classes, Source Code, and Headers
 
@@ -67,20 +67,20 @@ string Student::getName() { /* CODE */ }
 ```
 
 - Note the `public` and `private` “regions”.
-    - We can declare constructors or methods in this region without defining their code/implementation!
-- Outside the `class` curly braces, we can implement methods and also initialize static variables.
+    - We can declare constructors or methods in this region without defining their code/implementation.
+- Outside the `class`'s curly braces, we can implement methods and also initialize static variables.
 
 ### Member Initializer List
 
 - A fast way to write the constructor.
-- Ex, when there are `private` instance variables `int x;` and `int y;`: `Point::Point(int i, int j) : x(i), y(j) {/* EMPTY */}`
+- Ex: when there are `private` instance variables `int x;` and `int y;`: `Point::Point(int i, int j) : x(i), y(j) {/* EMPTY */}`
 
 ### Source vs. Header Files
 
 - `.cpp` for source files and `.h` for header files.
 - The header file contains just the class and declarations.
 - The source file contains all the static initialization and method implementation.
-- We can just send the header file to someone for them to get an idea of how the program works _without_ having to see any of the source code!
+- We can just send the header file to someone for them to get an idea of how the program works _without_ having to see any of the source code.
 
 ## C++ Memory Diagrams
 
@@ -101,6 +101,8 @@ string Student::getName() { /* CODE */ }
 
 ### Pointers
 
+^ba343a
+
 - _Are_ similar to Java references.
 - `[type]* [var name] = &[object name];` is how to create a pointer to an object, where the `&` here means “get the memory address of this object”.
 - We can nest pointers within each other.
@@ -113,6 +115,8 @@ string Student::getName() { /* CODE */ }
         - Ex: `ptr -> name` is equal to the name instance object of whatever `ptr` was pointing to.
 
 ### Memory Management
+
+^f08dc9
 
 - If we create an object without the `new` keyword, memory is automatically allocated on the runtime stack.
     - So once the method containing a constructing command without `new` finishes, it is destroyed (as the runtime stack clears out).
