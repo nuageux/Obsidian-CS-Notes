@@ -1,7 +1,7 @@
 #Data-Structure 
 ## Tries
 
-- A tree structure in which elements are represented by paths.
+- A [[Trees|tree]] structure in which elements are represented by paths.
     - Nodes have no values! No labels!
     - Edges are labeled. _A path represents an element_ based on the labels concatenated going down the path!
     - “Word nodes” are where paths can stop.
@@ -22,7 +22,7 @@
 - To find, follow the path corresponding to the node, and if the full path exists and ends on a word node, return `true`.
 - To remove is simple; just find the word in the trie, and if it exists, change the node from a word node to not a word node.
 
-## MWT Time Complexity
+## MWT [[Time and Space Complexity|Time Complexity]]
 
 - If $n$ = number of words and $k$ = length of the longest word entered:
 - It actually doesn’t matter how big $n$ is, but is instead dependent on how big $k$ is, giving $O(k)$ time.

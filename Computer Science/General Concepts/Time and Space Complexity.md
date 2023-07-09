@@ -1,17 +1,17 @@
 #Theoretical #Math 
 ## Time Complexity
 
-- How fast is my _**algorithm**_?
+- How fast is my algorithm?
     - We want to describe this in the **number of operations** with respect to the **input size** _n_.
 
 ## Notations of Complexity
 
-- Big-_O_ describes the **upper** bound
+- Big-_O_ describes the **upper** bound.
     - $f(n)$ is $O(g(n))$ if there exists some constant $A$ such that $Ag(n) ≥ f(n)$ when $n → infinity$.
     - a.k.a. “$f(n)$ is upper-bounded by $g(n)$”.
-    - Describes the worst-case, which is all we care about, really.
-- Big-_Ω_ describes the **lower** bound
-- Big-_θ_ describes the **tight** bound
+    - Describes the worst-case, which is normally what we care about.
+- Big-_Ω_ describes the **lower** bound.
+- Big-_θ_ describes the **tight** bound.
 
 ## Finding Big-O Time Complexity
 

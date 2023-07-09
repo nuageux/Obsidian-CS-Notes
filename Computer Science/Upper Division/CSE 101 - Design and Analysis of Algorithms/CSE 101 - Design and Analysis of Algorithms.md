@@ -25,11 +25,15 @@ The main philosophy is to **store and re-use** *instead of recomputing*.
 [[Final Review]]
 
 ## Course Content:
-[[Graph Search]]
-[[Using Data Structures]]
-[[Greedy Algorithms]]
-Divide and Conquer
-Dynamic Programming
-Problem Reduction - Difficulty
-Iterative Improvement
+- Graph Algorithms
+	- [[Graph Search]]
+		- [[Using Data Structures]]
+- [[Problem Reductions]]
+- [[Greedy Algorithms]]
+- Divide and Conquer
+- Dynamic Programming
+- Backtracking
+- Computational Intractability
+
+
 

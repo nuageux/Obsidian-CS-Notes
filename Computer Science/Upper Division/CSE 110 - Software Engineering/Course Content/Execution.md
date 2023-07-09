@@ -1,4 +1,5 @@
 #Project #Management 
+# a.k.a. Development
 Importantly, the work to do is *more granular* than our user stories. The user stories were *for the user*, but in reality, user stories are a collection of specific **tasks**, small bits of functionality that combine together to make a user story.
 - A task is done by *one developer*. A task has a:
 	- Title to refer to

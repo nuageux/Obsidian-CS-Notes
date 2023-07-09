@@ -1,7 +1,7 @@
 #CPP 
 ## C++ Data Types
 
-- Can be signed or unsigned
+- Can be [[Number Representation#^d3a40a|signed or unsigned]]
 - 5 Integer types
     - `char` [1 byte]
     - `short` [2 bytes]
@@ -18,7 +18,7 @@
 
 ### `string` type in C++
 
-- Is mutable! (as opposed to Java)
+- Is mutable (as opposed to Java) and value can be changed after initialization.
 - We can only concatenate other strings, though (unlike Java)
     - Must convert other things into strings or use a “stringstream”.
 - The substring method is different from Java as well:
@@ -27,14 +27,14 @@
 ### Comparing Objects in C++
 
 - We can use the relational operators `==`, `<`, etc. to compare objects.
-    - This is because unlike Java, the operators are overloaded.
+    - This is because unlike Java, the operators are [[Overriding and Overloading|overloaded]].
 
 ## C++ Variables
 
-- Variable initialization **isn’t** checked in C++!
-    - `int fast; int furious; int fastFurious = fast + furious;` Wouldn’t cause a compile error but will still ruin your code! We will get undefined behavior.
-- “Narrowing” **isn’t** checked in C++!
-    - It will let us put an integer value in a short without typecasting, but there will be overflow.
+- Variable initialization **isn’t** checked in C++.
+    - `int fast; int furious; int fastFurious = fast + furious;` Wouldn’t cause a compile error but would still ruin your code by causing undefined behavior.
+- “Narrowing” **isn’t** checked in C++.
+    - It will let us put an `int` value in a `short` without typecasting, but there will be [[Number Representation|overflow]].
     - We must typecast (valid) values ourselves.
 - We can declare variables outside of a class.
     - These are **global variables**. Anything in the file can access it.
@@ -66,7 +66,7 @@ void Student::setName(string n) { /* CODE */ }
 string Student::getName() { /* CODE */ }
 ```
 
-- Note the `public` and `private` “regions”.
+- Note the `public` and `private` regions.
     - We can declare constructors or methods in this region without defining their code/implementation.
 - Outside the `class`'s curly braces, we can implement methods and also initialize static variables.
 
@@ -84,7 +84,7 @@ string Student::getName() { /* CODE */ }
 
 ## C++ Memory Diagrams
 
-- Objects in C++ can contain other objects!
+- Objects in C++ can contain other objects.
     - As opposed to Java, whose objects can only contain references to other objects.
 - Furthermore, when naming an object during creation in C++, the name _is_ the object.
 - Ex: `Student s1("Niema");`
@@ -131,7 +131,7 @@ string Student::getName() { /* CODE */ }
 - Means “this variable can never be reassigned”.
 - Examples:
     - `const int a = 42;`
-        - `a = 41;` would **not** work! [compile error]
+        - `a = 41;` would **not** work! (compile error)
     - `int const b = 42;`
         - Is actually functionally identical to the format above.
 

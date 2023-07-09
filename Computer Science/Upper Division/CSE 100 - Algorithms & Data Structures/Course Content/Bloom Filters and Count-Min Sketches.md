@@ -9,7 +9,7 @@ An attempt to save space while maintaining the time complexity of a hash table.
 - Can have false positives
     - But, if the filter tells us an element exists, it might not necessarily be true.
 
-A bloom filter is a hash table of `bool`eans, all initialized to `false`.
+A bloom filter is a [[Hashing, Hash Tables, Hash Maps, and Collisions|hash table]] of `bool`eans, all initialized to `false`.
 - There are multiple hash functions, $k$ of them.
     - When inserting a new element, we will compute the hash value of this element for all $k$ hash functions.
     - Then, flip all the values of the filter that are in the given hash values to `true`.

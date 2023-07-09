@@ -1,4 +1,4 @@
-#Course #CSE #C
+#Course #CSE #C #Networks 
 Prerequisites: [[CSE 30 - Computer Organization & Systems Programming]], [[CSE 101 - Design and Analysis of Algorithms]], [[CSE 110 - Software Engineering]]
 
 Spring 2023
@@ -12,15 +12,14 @@ Instructor: Prof. Aaron Schulman (a.k.a. Shalev)
 - [[Framing]]
 - [[Transport Layer]]
 - [[Link Networks]]
-- Internetworks
-- IP Protocol
 - Internet Addressing
+	- [[IP Protocol]]
 - Routing, IPv6, ICMP
 - Discovering Addresses
 - Naming, NAT, Routing
 - Link-State Routing
-- Intradomain Routing
-- Interdomain Routing
+- Intra-domain Routing
+- Inter-domain Routing
 - Border Gateway Protocol
 - BGP and Router Design
 - Buffering & Scheduling

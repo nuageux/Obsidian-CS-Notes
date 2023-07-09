@@ -1,4 +1,4 @@
-#C-plus-plus 
+#CPP
 ## Motivation for Iterators
 
 ```cpp
@@ -42,11 +42,11 @@ while (itr != end) {    // the != is overloaded for the iterator class.
 
 ## Creating an Iterator Class
 
-- We should be implementing Iterator classes within our data structures.
+- We should be implementing Iterator classes within our [[Data Structures vs. Abstract Data Types#^5653b2|data structures]].
 
 We must:
 
-- Overload some operators in the Iterator class
+- [[Overriding and Overloading|Overload]] some operators in the Iterator class
     - `==`, should be true if the iterators are pointing to the same item.
     - `!=`, opposite of above
     - `*` (dereference) return a reference to the current data value

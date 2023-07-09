@@ -13,10 +13,9 @@ Instructor: Prof. Ryan Kastner
 - [[2D Grid Processing]]
 - [[Generalized Tiling and DRAM Bandwidth]]
 - [[Convolution]]
-- Machine Learning
+- [[CSE 151A - Machine Learning|Machine Learning]]
 - Classification
 - Training
-- Convolutional Layers
-- CNN Optimizaztion using Tiling
+- Convolutional Neural Networks
 - Convolution Optimization using GEMM
 - Advanced Parallel Programming

@@ -1,5 +1,5 @@
 #Data-Structure 
-## Red-Black Trees
+## Red-Black [[Trees]]
 
 1. All nodes must be red or black
     
@@ -22,7 +22,7 @@ Red-Black Trees typically has a larger height in practice. AVL Trees have a stri
 
 AVL Trees find elements faster, but Red-Black Trees can remove elements faster.
 
-## Proof of Red-Black Tree Worst-Case Time Complexity
+## Proof of Red-Black Tree Worst-Case [[Time and Space Complexity|Time Complexity]]
 
 O(log(n)). Proof:
 

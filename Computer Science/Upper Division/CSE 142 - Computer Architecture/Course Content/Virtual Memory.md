@@ -1,5 +1,4 @@
-#Practical #Computer-Architecture 
-# Virtual Memory
+#Practical #Computer-Architecture #OS
 - It's really just another level in the cache/memory hierarchy.
 - *Virtual Memory* is the name of the technique that allows us to view main memory as a cache of a larger memory space (on disk).
 	- Think of it as *a mapping function* from *VM addresses* to *physical memory locations*.

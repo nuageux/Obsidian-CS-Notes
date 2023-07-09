@@ -1,15 +1,12 @@
 #Data-Structure 
 ## What are Trees?
-
-- First, **Graphs**: A collection of nodes and edges.
-    - Linked Lists are examples of graphs.
+- They are a type of [[Graphs and Graph Traversal|Graph]]: A collection of nodes and edges.
+    - [[Linked Lists]] are an example of graphs. 
 - **Trees** have two properties:
-    - 1. They have no undirected cycles.
-        
-        - No loops.
+    - 1. They have no undirected [[Graphs and Graph Traversal#^69784f|cycles]].
+        - i.e. no loops.
         - If you turned the directed edges into undirected edges, there should still be no loops.
-    - 2. Are connected.
-        
+    - 2. Are [[Graphs and Graph Traversal#^14f34a|connected]].
         - There should be a (when undirected) path from any node to any other node.
 
 ### Special Cases of Valid Trees
@@ -41,7 +38,7 @@
 
 - We need an algorithm to iterate over the nodes stored in our trees.
 
-Depth First Search (DFS)
+[[DFS and BFS#^e10739|Depth-First Search]]
 
 - Preorder Traversal
     - Visit, Left, Right
@@ -53,7 +50,7 @@ Depth First Search (DFS)
     - Left, Right, Visit
     - Guaranteed that before visiting any node, all of that node’s descendants were already visited.
 
-Breadth First Search (BFS)
+[[DFS and BFS#^e9e38a|Breadth-First Search]]
 
 - Level-Order Traversal
     - 1st level (left-to-right), 2nd level (left-to-right), ...

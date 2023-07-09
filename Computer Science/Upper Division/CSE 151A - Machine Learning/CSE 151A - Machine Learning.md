@@ -8,7 +8,17 @@ Instructor: Prof. Sanjoy Dasgupta
 "Broad introduction to machine learning. Includes topics in supervised learning, such as *k*-nearest neighbor classifiers, decision trees, boosting, and perceptrons. Furthermore includes topics in unsupervised learning, such as *k*-means and hierarchical clustering. In addition to the actual algorithms, a focus on the principles behind the algorithms."
 
 ## Course Content
-- [[Nearest Neighbor Classification]]
-- [[Distance Functions for ML]]
 - [[Landscape of ML]]
+- [[Nearest Neighbor Classification]]
+	- [[Distance Functions for ML]]
 - [[Generative Models]]
+- Linear Models
+	- [[Linear Regression]]
+	- [[Perceptron]]
+	- [[Support Vector Machines]]
+	- [[Multiclass Classification]]
+- Non-linear Models
+	- [[Kernel Machines]]
+	- [[Decision Trees]]
+	- [[Ensemble Methods]]
+	- [[Neural Nets]]

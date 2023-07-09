@@ -13,13 +13,21 @@ Instructor: Prof. Albert Chern
 - [[OpenGL]]
 - [[Linear Algebra]]
 - 3D Rotations
+- Quaternions
+- Euler Angles
 - Affine Geometry
 - Projective Geometry
 - Hierarchical Modeling
 - Lighting
+- Barycentric Coordinates
 - Interpolation
 - Texture
-- [[More Realism]]
+- [[Realism in Graphics|Realism]]
 - [[Curves]] <!-- WIP -->
 - Surfaces
 - Ray Tracing
+- Rigid-Body Motion
+- Color
+- Transparency
+- Volume Rendering
+- [[Spatial Data Structures]]

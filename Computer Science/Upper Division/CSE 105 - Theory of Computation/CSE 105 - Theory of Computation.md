@@ -14,22 +14,23 @@ Instructor: Prof. Shachar Lovett
 
 ## Course Content
 **Regular Languages**
-[[Deterministic Finite Automata (DFA)]]
-[[Regular Expressions]]
-[[Nondeterministic Finite Automata (NFA)]]
-[[Pumping Lemma]]
+- [[Deterministic Finite Automata (DFA)]]
+- [[Regular Languages]]
+- [[Nondeterministic Finite Automata (NFA)]]
+- [[Pumping Lemma]]
 
 **Context-Free Languages**
-[[Context Free Grammar]]
-[[Push Down Automata]]
+- [[Context Free Grammar]]
+- [[Push Down Automata]]
 
-**Turing Machines and Languages**
-[[Turing Machines]]
-[[Decidability]]
-[[Undecidability]]
+**Turing Machines and Decidability**
+- [[Turing Machines]]
+- [[Decidability]]
+- [[Undecidability]]
+- [[Problem Reductions]] and the Halting Problem
 
 **Key Takeaway**
-All regular languages are also context-free;
-all context-free languages are decidable;
-all decidable languages are Turing-recognizable;
-yet this transitive relationship is not necessarily true in the opposite direction.
+- All regular languages are also context-free,
+	- all context-free languages are decidable,
+		- all decidable languages are Turing-recognizable,
+- ...yet this transitive relationship is not necessarily true in the opposite direction.

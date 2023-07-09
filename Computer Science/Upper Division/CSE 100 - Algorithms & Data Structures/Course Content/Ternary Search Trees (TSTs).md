@@ -1,5 +1,5 @@
-#Data-Structure 
-## Ternary Search Trees
+#Data-Structure #Algorithm 
+## Ternary Search [[Trees]]
 
 - BST: $O(klog(n))$, memory efficient
 - MWT: $O(k)$, memory ineffiecient
@@ -31,7 +31,7 @@
 - Perform TST `Find`
     - Make the last node in the traversal “not” a word node.
 
-## TST Time Complexity
+## TST [[Time and Space Complexity|Time Complexity]]
 
 - Dependent on time complexity of a BST. Think of the middle nodes as the values themselves.
 - $O(n)$ worst case, $O(log n)$ avg case.

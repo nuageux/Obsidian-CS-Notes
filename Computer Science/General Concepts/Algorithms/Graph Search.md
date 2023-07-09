@@ -28,9 +28,9 @@ Typically graphs are represented as [[Graphs and Graph Traversal#^a0afa3|adjacen
 - Matrices can check for an edge in constant time, but take up $O(V^2)$ space.
 - Lists can easily iterate through a node's neighbors and only take up $O(V+E)$ space, but has a slower edge lookup time of $O(V)$.
 
-# Graph Reachability and DFS
+# Graph Reachability
 Graph reachability: Given a directed graph $G$ and a starting vertex $s$, return an array that specifies for each vertex $u$ whether $u$ is reachable from $s$.
-- We could use [[Graphs and Graph Traversal#^b7e7ab|Depth-First Search]] or [[Graphs and Graph Traversal#^c4b4b1|Breadth-First Search]] for the traversal algorithm.
+- We could use [[DFS and BFS#^95b370|Depth-First Search]] or [[DFS and BFS#^2327c0|Breadth-First Search]] for the traversal algorithm.
 - Idea: When we have pinpointed a single node, the only action we can feasibly take is to examine all of its neighbors.
 
 ### Generic Graph Search

@@ -6,19 +6,12 @@ Problems are of the form Instance, Solution Format, Constraints, and Objective.
 - Adjacency List
 	- Check edge in O(V) time, but uses O(V+E) space
 	- Easy to search neighbors
-- DFS and BFS take O(V+E) for Graph Search
 - Pre (moment of first discovery) and Post (moment of final departure) numbers
 	- (u, v) is a back edge if Pre(v) < Pre(u) < Post(u) < Post(v)
 		- Which indicates a cycle.
 	- We can find a Directed Acyclic Graph by sorting the nodes by decreasing post number after a DFS (topological order).
 	- Find Strongly Connected Components by contructing the reverse graph, linearizing the DFS result in decreasing order, then doing explore one by one removing the nodes in that SCC.
-- Dijkstra's with:
-	- Array (better for dense)
-		- Sparse graphs where E = O(V), O(V^2)
-		- Dense graphs where E = O(V^2), also O(V^2)
-	- Binary Heap (better for sparse)
-		- Sparse is O(V log(V))
-		- Dense is O(V^2 log(v))
+
 
 ## Greedy Algorithms and Proofs
 - Modify-the-Solution aka Exchange Argument

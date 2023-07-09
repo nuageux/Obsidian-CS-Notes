@@ -1,5 +1,5 @@
 #Data-Structure 
-## The Set ADT
+## The Set [[Data Structures vs. Abstract Data Types|ADT]]
 
 - Stores multiple elements (keys)
     - `find(x)`: True if `x` exists in the set, otherwise false
@@ -17,4 +17,4 @@
 ## Implementing the Set and Map ADTs
 
 - Use anything... think of the time complexities for yourself
-- In C++, `set`s are implemented with Red-Black trees, while `unordered_set`s are implemented with hash tables.
+- In C++, `set`s are implemented with [[Red-Black Trees|Red-Black trees]], while `unordered_set`s are implemented with [[Hashing, Hash Tables, Hash Maps, and Collisions|hash tables]].

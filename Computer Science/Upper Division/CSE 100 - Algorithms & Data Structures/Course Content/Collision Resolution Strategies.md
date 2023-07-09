@@ -2,13 +2,12 @@
 
 ## Open Addressing (Linear Probing)
 
-A way to deal with collisions.
-
+A way to deal with [[Hashing, Hash Tables, Hash Maps, and Collisions#^dbb89b|collisions]].
 - If the slot you want to insert in is already taken, just check the next slots (until you find an empty one).
 - For find, you linearly probe until you find the element or come to an empty slot (you would’ve found it in a consecutive non-empty spot had it existed in the table).
 - If the backing array is full, we have to create a new, larger array and reinsert the elements from the original array into the new, bigger array.
-    - We must remember to deallocate the original array once we’re done with it.
-    - In fact, we don’t want to resize when the array is full. We want to resize **when we hit the load factor**!
+    - We must remember to [[Memory Management|deallocate]] the original array once we’re done with it.
+    - In fact, we don’t want to resize when the array is full. We want to resize **when we hit the [[load factor]]**!
 - Big-$O(n)$ in the worst case, but is constant time in the average case provided we designed the hashing algorithm to have most likely a constant number of collisions.
 
 ## Double Hashing

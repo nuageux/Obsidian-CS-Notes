@@ -1,5 +1,5 @@
-#Data-Structure 
-## Properties of a Binary Search Tree (BST)
+#Data-Structure #Algorithm 
+## Properties of a Binary Search [[Trees|Tree]] (BST)
 - Rooted Binary Tree
 - Every node is larger than all nodes in its left subtree
 - Every node is smaller than all nodes in its right subtree
@@ -30,7 +30,7 @@ Case 3: Two Children
 - Swap with the successor value, and remove the original node.
 - Searching for the successor guarantees that the swapped node won’t have a left child (goes as far left as possible).
 
-## BST Time Complexity
+## BST [[Time and Space Complexity|Time Complexity]]
 - Height of a node: Longest distance (# edges) from node to a leaf
 - Height of a tree: Height of the root
 

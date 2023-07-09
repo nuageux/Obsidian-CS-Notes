@@ -10,13 +10,19 @@ Instructor: Prof. Sicun Gao
 **Algorithmic approaches for making intelligent decisions.**
 
 ## Course Content
-- [[Classical Search]]
-- Adversial Search
-- Markov Decision Processes
-- Reinforcement Learning
-- Monte Carlo Tree Search
-- Deep RL
-- AlphaGo
-- Constraint Solving
+- Classical Search
+	- Search problems are defined by initial states and goal states alongside action states that bring us from old to new states.
+	- The "state space" is all the states it is possible to be at and is by nature very high dimensional.
+	- We must also define costs and rewards for search problems if we wish to find a sequence of actions that minimize costs and maximizes reward.
+	- The most common algorithms to search are
+		- [[DFS and BFS]]
+		- [[Dijkstra's Algorithm#^3864c1|Uniform Cost Search]]
+		- [[A*]]
+- [[Adversarial Search]]
+- [[Markov Decision Processes]]
+- [[Reinforcement Learning]]
+- [[Monte Carlo Tree Search]]
+- [[Constraint Solving]]
+- [[Propositional Logic|Propositional Reasoning]]
 - SAT Solving
 - First-order Reasoning

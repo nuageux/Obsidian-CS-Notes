@@ -1,7 +1,7 @@
 #Data-Structure 
 ## Treaps
 
-- Tree + Heap
+- A [[Trees|Tree]] + [[Heaps|Heap]] hybrid data structure.
 - Stores `(key, priority)` pairs.
 
 1. **BST** properties apply to keys.
@@ -43,7 +43,7 @@
 
 Basically forces a balanced tree, which makes the worst case O(log(n)), what we’ve wanted all along.
 
-## Proof of AVL Tree Worst-Case Time Complexity
+## Proof of AVL Tree Worst-Case [[Time and Space Complexity|Time Complexity]]
 
 Let $N_h$ be the minimum number of nodes that can form an AVL Tree with height $h$.
 
