@@ -17,7 +17,7 @@ Instructor: Prof. Sicun Gao
 	- The most common algorithms to search are
 		- [[DFS and BFS]]
 		- [[Dijkstra's Algorithm#^3864c1|Uniform Cost Search]]
-		- [[A*]]
+		- [[A Star||A*]]
 - [[Adversarial Search]]
 - [[Markov Decision Processes]]
 - [[Reinforcement Learning]]
