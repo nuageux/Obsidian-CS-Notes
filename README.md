@@ -1,1 +1,1 @@
-An amalgamation of my course knowledge from my (Andrew Uhm) undergraduate years at UCSD (2020-2023).
+An amalgamation of my course knowledge from my undergraduate years at UCSD (2020-2023).
